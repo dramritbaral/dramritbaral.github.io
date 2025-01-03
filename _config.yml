@@ -14,7 +14,7 @@ keywords: bishal, bishal-shrestha, phd, officialbishal # add your own keywords o
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://dramritbaral.github.io # the base hostname & protocol for your site
+url: http://dramritbaral.com.np/ # the base hostname & protocol for your site
 # url: https://sthabishal.com.np/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
