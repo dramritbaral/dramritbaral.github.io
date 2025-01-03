@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://dramritbaral.github.io/al-folio/sitemap.xml
+User-agent: * Disallow: Sitemap: https://dramritbaral.github.io/sitemap.xml
