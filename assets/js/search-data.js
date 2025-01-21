@@ -420,6 +420,17 @@ ninja.data = [{
           window.location.href = "/blog/2015/images/";
         
       },
+    },{id: "post-i-am-dr-amrit-baral",
+      
+        title: "I am Dr. Amrit Baral",
+      
+      description: "march &amp; april, looking forward to summer",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2015/first-post/";
+        
+      },
     },{id: "post-a-post-with-formatting-and-links",
       
         title: "a post with formatting and links",
