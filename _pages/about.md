@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>5030 Burnson Dr</p>
-    <p>Coral Gables</p>
+    <p>5030 Burnson Dr,</p>
+    <p>Coral Gables,</p>
     <p>Florida, 33146</p>
 
 news: true # includes a list of news items
