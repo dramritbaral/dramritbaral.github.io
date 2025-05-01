@@ -2,14 +2,10 @@
 layout: page
 permalink: /inthenews/
 title: In The News
-description: In The News
+description: Stay updated with recent media coverage and features.
 nav: true
 nav_order: 8
 ---
-
-# In The News
-
-Stay updated with recent media coverage and features.
 
 ## Featured Articles
 
