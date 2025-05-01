@@ -94,8 +94,8 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{id: "news-graduating-as-a-phd-scholar-in-epidimiology-from-university-of-miami-in-may-2025",
-          title: 'Graduating as a PhD scholar in epidimiology from University of Miami in May...',
+    },{id: "news-graduating-as-a-phd-scholar-in-epidemiology-from-university-of-miami-in-may-2025",
+          title: 'Graduating as a PhD scholar in epidemiology from University of Miami in May...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
