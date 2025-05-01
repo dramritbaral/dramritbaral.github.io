@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>Global Cannabis and Psychedelics Research Collaboratory</a>. University of Miami.
 
