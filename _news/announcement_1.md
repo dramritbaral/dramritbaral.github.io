@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduating as a PhD scholar in epidimiology from University of Miami in May 2025.
+Graduating as a PhD scholar in epidemiology from University of Miami in May 2025.
