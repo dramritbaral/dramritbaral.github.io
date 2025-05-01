@@ -1,200 +1,147 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Amrit Baral",
+    "label": "Epidemiologist & PhD Candidate",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "amrit.baral@miami.edu",
+    "phone": "(305) 123-4567",
+    "url": "https://herbalheartstudy.com/amritbaral/",
+    "summary": "Public health researcher with expertise in cannabis and psychedelic epidemiology, cardiovascular and cancer outcomes, and national surveillance datasets. Experienced in data management, statistical analysis, IRB processes, and academic publishing.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "1120 NW 14th Street",
+      "postalCode": "FL 33136",
+      "city": "Miami",
       "countryCode": "US",
-      "region": "California"
+      "region": "Florida"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "amritbaral",
+        "url": "https://www.linkedin.com/in/amritbaral/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "University of Miami, Miller School of Medicine",
+      "position": "Pre-Doctoral Research Fellow",
+      "url": "https://herbalheartstudy.com/amritbaral/",
+      "startDate": "2021-08-01",
+      "endDate": "",
+      "summary": "Leads biostatistics and data management for NIH-funded cannabis and cardiovascular health studies. Conducts statistical analyses, co-authors peer-reviewed publications, and mentors students.",
+      "highlights": [
+        "Herbal Heart Study (NHLBI)",
+        "CannHeart HIV Study (NIDA)",
+        "COVID-19 Cannabis Health Study",
+        "Psychedelic & Cannabis Communication in Cancer Care (NCI-funded)",
+        "Evaluation of Chronic Cannabis Use on Brain Imaging (MMJ Outcomes Research)"
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Chester County Health Department",
+      "position": "Disease Surveillance Specialist",
+      "url": "https://www.chesco.org/224/Health",
+      "startDate": "2020-11-16",
+      "endDate": "2021-07-16",
+      "summary": "Conducted outbreak investigations, analyzed surveillance data, and supported public health education related to infectious disease control.",
+      "highlights": [
+        "COVID-19 case investigations",
+        "Tick-borne disease surveillance",
+        "STD/HIV public health research internship"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "University of Miami",
+      "location": "Miami, FL",
+      "url": "https://med.miami.edu/",
+      "area": "Epidemiology",
+      "studyType": "PhD (Candidate)",
+      "startDate": "2021-08-01",
+      "endDate": "",
+      "score": "",
+      "courses": ["Dissertation: Co-Use of Classic Psychedelics and Cannabis and Cancer"]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "institution": "West Chester University",
+      "location": "West Chester, PA",
+      "url": "https://www.wcupa.edu/",
+      "area": "Community Health",
+      "studyType": "MPH",
+      "startDate": "2018-08-01",
+      "endDate": "2020-08-01",
+      "score": "4.0",
+      "courses": []
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "institution": "Chongqing Medical University",
+      "location": "Chongqing, China",
+      "url": "https://english.cqmu.edu.cn/",
+      "area": "Clinical Medicine",
+      "studyType": "MBBS",
+      "startDate": "2007-09-01",
+      "endDate": "2012-07-01",
+      "score": "3.58",
+      "courses": ["Clinical Internship at Western Regional Hospital, Nepal"]
     }
   ],
   "languages": [
+    {"language": "Nepali", "fluency": "Native speaker"},
+    {"language": "English", "fluency": "Fluent"},
+    {"language": "Mandarin Chinese", "fluency": "Intermediate"},
+    {"language": "Hindi", "fluency": "Fluent"}
+  ],
+  "skills": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "name": "Biostatistics & Data Management",
+      "level": "Advanced",
+      "keywords": ["SAS", "R", "SPSS", "REDCap", "Qualtrics"]
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "name": "Research & Writing",
+      "level": "Advanced",
+      "keywords": ["Grant Writing", "Manuscript Development", "Systematic Reviews"]
+    },
+    {
+      "name": "Epidemiology",
+      "level": "Expert",
+      "keywords": ["Cannabis Epidemiology", "Cancer Epidemiology", "Surveillance"]
+    },
+    {
+      "name": "Public Health Operations",
+      "level": "Proficient",
+      "keywords": ["Infectious Disease Surveillance", "Health Education", "Community Health"]
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Global Health & Policy",
+      "keywords": ["Health Communication", "HIV/AIDS Awareness", "Environmental Health"]
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Academic Mentorship",
+      "keywords": ["Student Support", "TA Experience", "Curriculum Delivery"]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Herbal Heart Study",
+      "summary": "NIH-funded study investigating cannabis and cardiovascular health in diverse young adults.",
+      "highlights": ["Data analysis", "Manuscript preparation", "Mentorship"],
+      "startDate": "2021-08-01",
+      "url": "https://herbalheartstudy.com/amritbaral/"
+    },
+    {
+      "name": "COVID-19 Cannabis Health Study",
+      "summary": "Examined health behaviors, cannabis and psilocybin use trends during the pandemic.",
+      "highlights": ["National survey data analysis", "Publication contributions", "Psychedelic research"]
+    },
+    {
+      "name": "Cannabis & Cancer Communication Study",
+      "summary": "Studied cannabis use discussions between patients and providers at an NCI-designated center.",
+      "highlights": ["Survey research", "Disparities analysis", "Manuscript in JCO"]
     }
   ]
 }
