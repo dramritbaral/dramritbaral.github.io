@@ -6,7 +6,7 @@ subtitle: <a href='#'>Global Cannabis and Psychedelics Research Collaboratory</a
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Baral_Amrit_678-0882.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>5030 Burnson Dr,</p>
