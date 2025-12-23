@@ -9,21 +9,17 @@ nav_order: 8
 
 ## Featured Articles
 
-- **Exploring the Future of Cannabis Research**  
-  *Science Daily* (April 10, 2025)  
-  [Read the article](https://www.sciencedaily.com/releases/2025/04/2504101234.htm)
+- **New Study Finds Potential Link Between Classic Psychedelic Use and Prostate Cancer Diagnosis in Older U.S. Men**  
+  *OncoDaily* (December 17, 2025)  
+  [Read the article](https://oncodaily.com/voices/psychedelic-429966)
 
-- **COVID-19 and Cannabis Use: What New Studies Show**  
-  *Healthline* (March 22, 2025)  
-  [Read the article](https://www.healthline.com/health-news/covid-cannabis-use-study)
+- **Dr. Amrit Baral Featured on OncoDaily**  
+  *OncoDaily* (2025)  
+  [Read the article](https://oncodaily.com/blog/amrit-baral-309186)
 
-- **University of Miami Leads Study on Psychedelics and Heart Health**  
-  *Miami Herald* (February 5, 2025)  
-  [Read the article](https://www.miamiherald.com/news/local/health/article123456789.html)
-
-- **Interview: Dr. Amrit Baral on Cannabis, Coping, and Cardiovascular Risk**  
-  *NPR Health Hour* (January 15, 2025)  
-  [Read the article](https://www.npr.org/2025/01/15/health-hour-cannabis-interview)
+- **Featured Article**  
+  *Himalaya Times* (November 2024)  
+  [Read the article](https://english.himalayatimes.com.np/2024/11/86043/)
 
 ---
 
