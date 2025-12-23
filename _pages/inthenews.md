@@ -25,14 +25,6 @@ nav_order: 8
   *NPR Health Hour* (January 15, 2025)  
   [Read the article](https://www.npr.org/2025/01/15/health-hour-cannabis-interview)
 
-## Press Releases
-
-- **Global Cannabis and Psychedelics Research Collaboratory Announces New NIH Grant**  
-  [Read the press release](https://www.nih.gov/news-events/news-releases/new-nih-grant-announced-cannabis-research)
-
-- **Sylvester Comprehensive Cancer Center Launches Psychedelics Study**  
-  [Read more](https://umiamihealth.org/en/newsroom/psychedelics-cancer-coping)
-
 ---
 
 *Check back regularly for more updates from our team in the media.*
