@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Johns Hopkins University Bloomberg School of Public Health
+subtitle: <strong>Johns Hopkins University Bloomberg School of Public Health</strong>
 
 profile:
   align: right
