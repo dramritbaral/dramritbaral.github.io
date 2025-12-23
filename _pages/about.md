@@ -9,9 +9,10 @@ profile:
   image: Baral_Amrit_678-0882.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>5030 Burnson Dr,</p>
-    <p>Coral Gables,</p>
-    <p>Florida, 33146</p>
+    <p>Department of Mental Health,</p>
+    <p>Johns Hopkins University Bloomberg School of Public Health,</p>
+    <p>1812 Ashland Ave,</p>
+    <p>Baltimore MD, 21205</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
