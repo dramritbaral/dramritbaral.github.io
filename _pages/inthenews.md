@@ -25,6 +25,11 @@ nav_order: 8
   *University of Miami Miller School of Medicine* (July 25, 2025)  
   [Read the article](https://www.publichealth.med.miami.edu/news/news-releases/2025/from-doctoral-training-to-national-impact/index.html)
 
+## Videos
+
+- **Cannabis Use in Cancer Patients- Dr. Amrit Baral, ASCO 2024**  
+  [Watch on YouTube](https://www.youtube.com/watch?v=f-VgDA1xotk)
+
 ---
 
 *Check back regularly for more updates from our team in the media.*
