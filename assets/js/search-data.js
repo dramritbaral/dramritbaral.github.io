@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/inthenews/";
           },
-        },{id: "news-graduating-as-a-phd-scholar-in-epidemiology-from-university-of-miami-in-may-2025",
+        },{id: "post-new-study-finds-potential-link-between-classic-psychedelic-use-and-prostate-cancer-diagnosis-in-older-u-s-men",
+      
+        title: 'New Study Finds Potential Link Between Classic Psychedelic Use and Prostate Cancer Diagnosis... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "OncoDaily article about Dr. Amrit Baral&#39;s research on psychedelics and prostate cancer",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://oncodaily.com/voices/psychedelic-429966", "_blank");
+        
+      },
+    },{id: "news-graduating-as-a-phd-scholar-in-epidemiology-from-university-of-miami-in-may-2025",
           title: 'Graduating as a PhD scholar in epidemiology from University of Miami in May...',
           description: "",
           section: "News",},{
