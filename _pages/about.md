@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Mental Health,</p>
-    <p>Johns Hopkins University Bloomberg School of Public Health,</p>
+    <p>Johns Hopkins University <span style="white-space: nowrap;">Bloomberg School of Public Health</span>,</p>
     <p>1812 Ashland Ave,</p>
     <p>Baltimore MD, 21205</p>
 
