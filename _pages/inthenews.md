@@ -13,11 +13,11 @@ nav_order: 8
   *OncoDaily* (December 17, 2025)  
   [Read the article](https://oncodaily.com/voices/psychedelic-429966)
 
-- **Dr. Amrit Baral Featured on OncoDaily**  
+- **PhD Spotlight: Dr. Amrit Baral Explores Cannabis and Psychedelics in Cancer and Aging**  
   *OncoDaily* (2025)  
   [Read the article](https://oncodaily.com/blog/amrit-baral-309186)
 
-- **Featured Article**  
+- **Journey of a Nepali Doctor**  
   *Himalaya Times* (November 2024)  
   [Read the article](https://english.himalayatimes.com.np/2024/11/86043/)
 
