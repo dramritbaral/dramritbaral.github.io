@@ -12,7 +12,11 @@ nav_order: 9
 </div>
 
 <div class="clearfix">
-  <p>To advocate against the stigma of HIV/AIDS and educate individuals and communities on this disease I traveled across 16 countries in Asia and across the United States in my bicycle. I visited different communities, educational institutions, international media, and health agencies to raise awareness on HIV/AIDS.</p>
+  <p>In the year 2015, to advocate against the stigma of HIV/AIDS and educate individuals and communities on this disease, I traveled across 16 countries in Asia and across the United States in my bicycle. I visited different communities, educational institutions, international media, and health agencies to raise awareness on HIV/AIDS.</p>
 </div>
 
 ## News and Media
+
+- **Small Talk: Long distance biker travels the world**  
+  *Daily Local* (November 24, 2018)  
+  [Read the article](https://www.dailylocal.com/2018/11/24/small-talk-long-distance-biker-travels-the-world/)
