@@ -9,7 +9,7 @@ profile:
   image: Baral_Amrit_678-0882.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Department of Mental Health,</p>
+    <p><a href="https://www.thrulresearchlab.com/team" target="_blank">Department of Mental Health</a>,</p>
     <p>Johns Hopkins University <span style="white-space: nowrap;">Bloomberg School of Public Health</span>,</p>
     <p>1812 Ashland Ave,</p>
     <p>Baltimore MD, 21205</p>
@@ -18,7 +18,7 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Dr. Amrit Baral is an epidemiologist and physician-scientist, with a Ph.D. in Epidemiology from the University of Miami Miller School of Medicine and medical training from Chongqing Medical University, China. Currently, he is a NIDA T32 Postdoctoral Research Fellow in the Department of Mental Health at Johns Hopkins Bloomberg School of Public Health. Dr. Baral's current research focuses on cannabis hyperemesis syndrome (CHS), route-specific patterns of cannabis use and their association with cannabis use disorder (CUD), and the cardiometabolic and sleep-related health effects of cannabis use in occupational settings. Using large national survey data and electronic health records, he examines how patterns and contexts of cannabis use translate into clinical and population-level health outcomes.
+Dr. Amrit Baral is an epidemiologist and physician-scientist, with a Ph.D. in Epidemiology from the University of Miami Miller School of Medicine and medical training from Chongqing Medical University, China. Currently, he is a NIDA T32 Postdoctoral Research Fellow in the <a href="https://www.thrulresearchlab.com/team" target="_blank">Department of Mental Health</a> at Johns Hopkins Bloomberg School of Public Health. Dr. Baral's current research focuses on cannabis hyperemesis syndrome (CHS), route-specific patterns of cannabis use and their association with cannabis use disorder (CUD), and the cardiometabolic and sleep-related health effects of cannabis use in occupational settings. Using large national survey data and electronic health records, he examines how patterns and contexts of cannabis use translate into clinical and population-level health outcomes.
 
 Dr. Baral received his Master of Public Health degree from West Chester University of Pennsylvania. Born and raised in Pokhara, Nepal, he practiced clinical medicine in Nepal before transitioning to a career in public health and research in the United States. His research interest lies on exploring the biological, behavioral, and societal effects of cannabis and psychedelics on human health and disease through a comprehensive "cells-to-society" approach. Passionate about conceptualizing, designing, and implementing rigorous epidemiological studies, Dr. Baral aims to elucidate the role of alternative and integrative medicine—particularly cannabis and classic psychedelics—in promoting health and addressing chronic disease. Dr. Baral is a founding member of the Global Cannabis and Psychedelics Research Collaboratory at the University of Miami in Florida. 
 
