@@ -20,3 +20,39 @@ nav_order: 9
 - **Small Talk: Long distance biker travels the world**  
   *Daily Local* (November 24, 2018)  
   [Read the article](https://www.dailylocal.com/2018/11/24/small-talk-long-distance-biker-travels-the-world/)
+
+- **Nepalese brothers cycle the world for environment, public health**  
+  *Korea Herald* (May 22, 2016)  
+  [Read the article](https://www.koreaherald.com/article/965227)
+
+- **Brothers on world bicycle tour to protect environment, fight HIV/AIDS**  
+  *My Republica* (August 31, 2016)  
+  [Read the article](https://myrepublica.nagariknetwork.com/news/brothers-on-world-bicycle-tour-to-protect-environment-fight-hiv-aids/#google_vignette)
+
+- **Pedaling the Path to Global Health: A Doctor's Journey from Medicine to Public Health**  
+  *NepYork* (November 3, 2023)  
+  [Read the article](https://nepyork.com/2023/11/03/pedaling-the-path-to-global-health-a-doctors-journey-from-medicine-to-public-health/)
+
+- **Going the extra mile**  
+  *Kathmandu Post* (November 15, 2016)  
+  [Read the article](https://kathmandupost.com/art-entertainment/2016/11/15/going-the-extra-mile)
+
+- **Nepalese brothers cycle through Southern Illinois for environmentalism, AIDS awareness**  
+  *The Southern*  
+  [Read the article](https://thesouthern.com/news/local/nepalese-brothers-cycle-through-southern-illinois-for-environmentalism-aids-awareness/article_e523452d-2ae0-54d8-bf3e-80738edc2a46.html)
+
+- **Cycle awareness**  
+  *New Straits Times* (April 2016)  
+  [Read the article](https://www.nst.com.my/news/2016/04/139824/cycle-awareness#google_vignette)
+
+- **Pushing the pedals: Nepalese cyclists plan to circle the world**  
+  *Khmer Times*  
+  [Read the article](https://www.khmertimeskh.com/35431/pushing-the-pedals-nepalese-cyclists-plan-to-circle-the-world/)
+
+- **Nepali activists pedal through Korea**  
+  *Korea Times* (June 15, 2016)  
+  [Read the article](https://www.koreatimes.co.kr/southkorea/globalcommunity/20160615/nepali-activists-pedal-through-korea)
+
+- **On wheels from Nepal for nature conservation**  
+  *The Hindu*  
+  [Read the article](https://www.thehindu.com/news/cities/Thiruvananthapuram/on-wheels-from-nepal-for-nature-conservation/article7787059.ece)
