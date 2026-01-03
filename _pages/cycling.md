@@ -40,19 +40,3 @@ nav_order: 9
 - **Nepalese brothers cycle through Southern Illinois for environmentalism, AIDS awareness**  
   *The Southern*  
   [Read the article](https://thesouthern.com/news/local/nepalese-brothers-cycle-through-southern-illinois-for-environmentalism-aids-awareness/article_e523452d-2ae0-54d8-bf3e-80738edc2a46.html)
-
-- **Cycle awareness**  
-  *New Straits Times* (April 2016)  
-  [Read the article](https://www.nst.com.my/news/2016/04/139824/cycle-awareness#google_vignette)
-
-- **Pushing the pedals: Nepalese cyclists plan to circle the world**  
-  *Khmer Times*  
-  [Read the article](https://www.khmertimeskh.com/35431/pushing-the-pedals-nepalese-cyclists-plan-to-circle-the-world/)
-
-- **Nepali activists pedal through Korea**  
-  *Korea Times* (June 15, 2016)  
-  [Read the article](https://www.koreatimes.co.kr/southkorea/globalcommunity/20160615/nepali-activists-pedal-through-korea)
-
-- **On wheels from Nepal for nature conservation**  
-  *The Hindu*  
-  [Read the article](https://www.thehindu.com/news/cities/Thiruvananthapuram/on-wheels-from-nepal-for-nature-conservation/article7787059.ece)
