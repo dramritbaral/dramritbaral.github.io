@@ -7,8 +7,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_posts/**"
       - "**.bib"
       - "**.html"
+      - "**/*.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
@@ -34,8 +36,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_posts/**"
       - "**.bib"
       - "**.html"
+      - "**/*.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
