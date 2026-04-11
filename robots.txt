@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: http://dramritbaral.com.np/sitemap.xml
+User-agent: * Disallow: Sitemap: https://dramritbaral.com.np/sitemap.xml
