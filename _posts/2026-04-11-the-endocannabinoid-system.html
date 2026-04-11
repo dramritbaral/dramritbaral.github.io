@@ -5,6 +5,7 @@ date: 2026-04-11 00:00:00
 description: >-
   A plain-language tour of the ECS—receptors, endocannabinoids,
   clinical context, and lifestyle factors that support tone.
+thumbnail: assets/img/ecs-endocannabinoid-system-cover.png
 ---
 
 <!DOCTYPE html>
@@ -50,9 +51,27 @@ description: >-
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 4rem 6vw 5rem;
+    justify-content: space-between;
+    padding: 2.5rem 6vw 5rem;
     overflow: hidden;
+  }
+
+  .hero-cover-art {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: min(100%, 960px);
+    max-height: min(52vh, 560px);
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-main {
+    position: relative;
+    z-index: 2;
   }
 
   .hero::before {
@@ -800,7 +819,8 @@ description: >-
   @media (max-width: 600px) {
     .receptor-diagram { flex-direction: column; }
     .receptor-divider { width: 100%; height: 1px; min-height: auto; }
-    .hero { padding: 3rem 5vw 4rem; }
+    .hero { padding: 2rem 5vw 4rem; }
+    .hero-cover-art { max-height: min(40vh, 320px); }
   }
 </style>
 </head>
@@ -810,6 +830,16 @@ description: >-
 <header class="hero">
   <div class="molecule-grid"></div>
   <div class="hero-bg-text">ECS</div>
+  <img
+    class="hero-cover-art"
+    src="{{ '/assets/img/ecs-endocannabinoid-system-cover.png' | relative_url }}"
+    alt="Infographic: The Endocannabinoid System — receptors, synapses, and endocannabinoids"
+    width="1024"
+    height="576"
+    loading="eager"
+    decoding="async"
+  >
+  <div class="hero-main">
   <h1>Your Body's <em>Hidden</em><br>Cannabis System</h1>
   <p class="hero-subtitle">An in-depth exploration of the Endocannabinoid System — the biological network that was hiding in plain sight for most of human history, and why it may be one of the most important systems you've never heard of.</p>
   <div class="hero-author">
@@ -819,6 +849,7 @@ description: >-
       Physician-Scientist | Cannabis &amp; Psychedelics Researcher<br>
       Postdoctoral Fellow &middot; Johns Hopkins Bloomberg School of Public Health
     </div>
+  </div>
   </div>
   <div class="scroll-indicator">
     <div class="scroll-line"></div>
