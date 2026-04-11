@@ -16,8 +16,8 @@ thumbnail: assets/ecs-endocannabinoid-system-cover.png
 <title>The Endocannabinoid System — Amrit Baral, PhD, MBBS, MPH</title>
 {% capture _author %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
 {% assign _desc = page.description | strip_newlines | strip | escape %}
-{% assign _thumb_path = page.thumbnail | remove_first: '/' | prepend: '/' %}
-{% assign _og_image = _thumb_path | absolute_url %}
+{% comment %}HtmlCompressor strips slashes inside some meta content= URLs (e.g. /assets/ecs → assetsecs). Use %2f so og:image survives minification and Facebook can fetch the PNG.{% endcomment %}
+{% capture _og_image %}{{ site.url }}/assets%2fecs-endocannabinoid-system-cover.png{% endcapture %}
 {% assign _page_url = page.url | replace: 'index.html', '' | absolute_url %}
 <link rel="canonical" href="{{ _page_url }}">
 <meta name="description" content="{{ _desc }}">
@@ -27,6 +27,8 @@ thumbnail: assets/ecs-endocannabinoid-system-cover.png
 <meta property="og:url" content="{{ _page_url }}">
 <meta property="og:description" content="{{ _desc }}">
 <meta property="og:image" content="{{ _og_image }}">
+<meta property="og:image:secure_url" content="{{ _og_image }}">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="576">
 <meta property="og:locale" content="{{ site.lang | default: 'en' }}">
