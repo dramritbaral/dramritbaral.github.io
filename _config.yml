@@ -84,8 +84,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: blog # blog_name will be displayed in your blog page
-blog_description: pouring my thoughts
+blog_name: "" # optional; leave blank to hide the blog index title line
+blog_description: "" # optional; leave blank to hide the subtitle line
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -264,8 +264,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["health"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: [] # optional: e.g. ["health"] to show tag shortcuts on the blog index
+display_categories: [] # optional: e.g. ["external-services"] for category shortcuts
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
