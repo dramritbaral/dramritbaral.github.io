@@ -240,6 +240,8 @@ sass:
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
   # exclude: ["robots.txt", "assets/js/search/*.js"]
+  # HtmlCompressor can corrupt paths inside attributes (e.g. .../assets/img/... → .../assetsimg/...), breaking og:image for Facebook.
+  remove_spaces_inside_tags: false
 
 # -----------------------------------------------------------------------------
 # Terser
