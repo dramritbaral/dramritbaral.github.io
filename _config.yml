@@ -15,7 +15,7 @@ keywords: amrit, amrit-baral, baral, doctor, phd, dr-amrit-baral, amrit-baral-tr
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: A # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: http://dramritbaral.com.np # the base hostname & protocol for your site
+url: https://dramritbaral.com.np # use https so Open Graph / Facebook previews get absolute https image URLs
 baseurl: #/al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -61,7 +61,7 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Open Graph + Twitter cards (needed for Facebook/LinkedIn link previews)
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
