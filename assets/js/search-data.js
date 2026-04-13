@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cycling/";
           },
-        },{id: "post-the-endocannabinoid-system",
+        },{id: "post-the-cannabis-plant-a-complete-guide-to-its-chemical-components",
+      
+        title: "The Cannabis Plant: A Complete Guide to Its Chemical Components",
+      
+      description: "Cannabinoids, terpenes, flavonoids, alkaloids, and beyond—an evidence-based guide to what the cannabis plant is made of and what the science says it does.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/the-cannabis-plant-chemical-components/";
+        
+      },
+    },{id: "post-the-endocannabinoid-system",
       
         title: "The Endocannabinoid System",
       
