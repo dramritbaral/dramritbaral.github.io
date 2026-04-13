@@ -1,0 +1,966 @@
+---
+layout: none
+title: "The Cannabis Plant: A Complete Guide to Its Chemical Components"
+date: 2026-04-12 00:00:00
+description: >-
+  Cannabinoids, terpenes, flavonoids, alkaloids, and beyond—an evidence-based guide to what the cannabis plant is made of and what the science says it does.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cannabis Plant: A Complete Guide to Its Chemical Components — Amrit Baral, PhD, MBBS, MPH</title>
+{% capture _author %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% assign _desc = page.description | strip_newlines | strip | escape %}
+{% assign _page_url = page.url | replace: 'index.html', '' | absolute_url %}
+<link rel="canonical" href="{{ _page_url }}">
+<meta name="description" content="{{ _desc }}">
+<meta property="og:site_name" content="{{ _author | escape }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title | escape }} — {{ _author | escape }}">
+<meta property="og:url" content="{{ _page_url }}">
+<meta property="og:description" content="{{ _desc }}">
+<meta property="og:locale" content="{{ site.lang | default: 'en' }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ _desc }}">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #f5f0e8;
+    --dark: #1a1a14;
+    --green-deep: #1e3a2f;
+    --green-mid: #2d5a3d;
+    --green-brig: #4a8c5c;
+    --green-light: #7ab893;
+    --green-pale: #c8e0cc;
+    --amber: #c8832a;
+    --amber-light: #e8a84a;
+    --rust: #8b3a2a;
+    --purple: #6b4e7a;
+    --purple-light: #a07cb5;
+    --blue: #2a5a7a;
+    --blue-light: #5a9ab5;
+    --text: #2a2a1e;
+    --text-muted: #5a5a48;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 92vh;
+    background: var(--green-deep);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem 6vw 5rem;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 55% 45% at 85% 15%, rgba(74,140,92,0.22) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 55% at 5% 85%, rgba(107,78,122,0.14) 0%, transparent 60%),
+      radial-gradient(ellipse 35% 40% at 50% 50%, rgba(200,131,42,0.08) 0%, transparent 60%);
+  }
+  .molecule-grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(122,184,147,0.12) 1px, transparent 1px);
+    background-size: 52px 52px;
+    animation: gridShift 22s linear infinite;
+  }
+  @keyframes gridShift { 0%{background-position:0 0} 100%{background-position:52px 52px} }
+
+  .hero-bg-text {
+    position: absolute; top: -1vw; right: -1vw;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(7rem, 16vw, 20rem);
+    font-weight: 900; color: rgba(255,255,255,0.025);
+    line-height: 1; user-select: none; letter-spacing: -0.04em;
+  }
+
+  .hero-tag {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--green-light); margin-bottom: 1.5rem;
+    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 6.5vw, 6.5rem);
+    font-weight: 900; line-height: 1.05;
+    color: var(--cream); letter-spacing: -0.02em;
+    max-width: 920px;
+    opacity: 0; animation: fadeUp 0.9s 0.4s forwards;
+  }
+  .hero h1 em { font-style: italic; color: var(--green-light); }
+  .hero h1 span.amber { color: var(--amber-light); }
+
+  .hero-subtitle {
+    margin-top: 1.75rem; font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+    color: rgba(245,240,232,0.58); max-width: 580px; line-height: 1.75;
+    opacity: 0; animation: fadeUp 0.9s 0.6s forwards;
+  }
+  .hero-author {
+    margin-top: 2.8rem; display: flex; align-items: center; gap: 1rem;
+    opacity: 0; animation: fadeUp 0.9s 0.8s forwards;
+  }
+  .author-dot {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-brig), var(--amber));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; font-size: 1.2rem;
+    font-weight: 700; color: white; flex-shrink: 0;
+  }
+  .author-info { color: rgba(245,240,232,0.75); font-size: 0.85rem; }
+  .author-info strong { display: block; color: var(--cream); font-weight: 500; font-size: 0.95rem; }
+
+  .scroll-indicator {
+    position: absolute; bottom: 2rem; right: 6vw;
+    display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+    color: rgba(245,240,232,0.3); font-size: 0.65rem; letter-spacing: 0.15em;
+    text-transform: uppercase; font-family: 'DM Mono', monospace;
+    opacity: 0; animation: fadeUp 1s 1.2s forwards;
+  }
+  .scroll-line {
+    width: 1px; height: 55px;
+    background: linear-gradient(to bottom, rgba(245,240,232,0.3), transparent);
+    animation: scrollPulse 2s infinite;
+  }
+  @keyframes scrollPulse { 0%,100%{opacity:0.3} 50%{opacity:0.7} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* LAYOUT */
+  .section { padding: 4rem 6vw; max-width: 880px; margin: 0 auto; }
+  .section-label {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--green-brig); margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-label::after {
+    content: ''; flex: 1; height: 1px;
+    background: var(--green-pale); max-width: 80px;
+  }
+  .section-label.amber { color: var(--amber); }
+  .section-label.amber::after { background: rgba(200,131,42,0.3); }
+  .section-label.purple { color: var(--purple-light); }
+  .section-label.purple::after { background: rgba(107,78,122,0.3); }
+  .section-label.blue { color: var(--blue-light); }
+  .section-label.blue::after { background: rgba(42,90,122,0.3); }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.7rem);
+    font-weight: 700; line-height: 1.2; color: var(--dark);
+    margin-bottom: 1.5rem; letter-spacing: -0.01em;
+  }
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.15rem, 2vw, 1.55rem);
+    font-weight: 700; color: var(--green-deep); margin: 2rem 0 0.75rem;
+  }
+  p {
+    font-size: clamp(0.93rem, 1.2vw, 1.06rem);
+    color: var(--text); margin-bottom: 1.4rem; max-width: 700px;
+  }
+
+  /* INTRO PULL */
+  .intro-block {
+    padding: 5rem 6vw 1rem; background: var(--cream); position: relative;
+  }
+  .intro-block::before {
+    content: '"'; position: absolute; top: 2.5rem; left: 4.5vw;
+    font-family: 'Playfair Display', serif; font-size: 11rem;
+    line-height: 1; color: var(--green-pale); user-select: none;
+  }
+  .pull-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+    font-weight: 400; font-style: italic; line-height: 1.55;
+    color: var(--green-deep); max-width: 720px; margin: 0 auto;
+    padding: 1.75rem 0 1.75rem 2rem;
+    border-left: 3px solid var(--green-brig); position: relative; z-index: 1;
+  }
+  .pull-quote cite {
+    display: block; margin-top: 1rem; font-family: 'DM Mono', monospace;
+    font-size: 0.68rem; font-style: normal; letter-spacing: 0.1em; color: var(--text-muted);
+  }
+
+  /* ANALOGY BOX */
+  .analogy-box {
+    background: var(--green-deep); border-radius: 2px;
+    padding: 2rem 2.5rem; margin: 2.5rem 0; position: relative; overflow: hidden;
+  }
+  .analogy-box::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: linear-gradient(90deg, var(--green-brig), var(--amber-light));
+  }
+  .analogy-tag {
+    font-family: 'DM Mono', monospace; font-size: 0.6rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--amber-light); margin-bottom: 0.75rem;
+  }
+  .analogy-box p { color: rgba(245,240,232,0.85); font-size: 1rem; max-width: 100%; margin-bottom: 0; }
+  .analogy-box strong { color: var(--amber-light); }
+
+  /* TECH BOX */
+  .tech-box {
+    background: #f0ede4; border: 1px solid var(--green-pale);
+    border-radius: 2px; padding: 2rem 2.5rem; margin: 2.5rem 0; position: relative;
+  }
+  .tech-box::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 3px; height: 100%; background: var(--rust);
+  }
+  .tech-tag {
+    font-family: 'DM Mono', monospace; font-size: 0.6rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 0.75rem;
+  }
+  .tech-box p { color: var(--text); font-size: 0.95rem; max-width: 100%; }
+  .tech-box code {
+    background: rgba(139,58,42,0.1); color: var(--rust);
+    padding: 0.1em 0.4em; border-radius: 2px;
+    font-family: 'DM Mono', monospace; font-size: 0.85em;
+  }
+
+  /* EVIDENCE BOX */
+  .evidence-box {
+    background: #eef4f8; border: 1px solid #b8d4e0;
+    border-radius: 2px; padding: 1.75rem 2.5rem; margin: 2rem 0; position: relative;
+  }
+  .evidence-box::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 3px; height: 100%; background: var(--blue-light);
+  }
+  .evidence-tag {
+    font-family: 'DM Mono', monospace; font-size: 0.6rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--blue-light); margin-bottom: 0.75rem;
+  }
+  .evidence-box p { font-size: 0.9rem; color: #2a3a4a; max-width: 100%; margin-bottom: 0.6rem; }
+  .evidence-box p:last-child { margin-bottom: 0; }
+
+  /* CANNABINOID CARDS */
+  .canna-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem; margin: 2rem 0;
+  }
+  .canna-card {
+    background: white; border: 1px solid #e8e2d6;
+    padding: 1.6rem; position: relative; overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .canna-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(30,58,47,0.1); }
+  .canna-card::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  }
+  .cc-thc::after   { background: var(--rust); }
+  .cc-cbd::after   { background: var(--green-brig); }
+  .cc-cbg::after   { background: var(--amber); }
+  .cc-cbn::after   { background: var(--green-mid); }
+  .cc-cbc::after   { background: var(--blue); }
+  .cc-thcv::after  { background: var(--purple); }
+  .cc-cbdv::after  { background: #4a7a5c; }
+  .cc-thca::after  { background: #b05a3a; }
+  .cc-cbda::after  { background: #3a7a52; }
+  .cc-cbga::after  { background: #b08a2a; }
+  .cc-cbno::after  { background: #5a8a6a; }
+  .cc-hhc::after   { background: #7a5a9a; }
+
+  .canna-abbr {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem; font-weight: 900; line-height: 1; margin-bottom: 0.2rem;
+  }
+  .cc-thc  .canna-abbr { color: var(--rust); }
+  .cc-cbd  .canna-abbr { color: var(--green-brig); }
+  .cc-cbg  .canna-abbr { color: var(--amber); }
+  .cc-cbn  .canna-abbr { color: var(--green-mid); }
+  .cc-cbc  .canna-abbr { color: var(--blue); }
+  .cc-thcv .canna-abbr { color: var(--purple); }
+  .cc-cbdv .canna-abbr { color: #4a7a5c; }
+  .cc-thca .canna-abbr { color: #b05a3a; }
+  .cc-cbda .canna-abbr { color: #3a7a52; }
+  .cc-cbga .canna-abbr { color: #b08a2a; }
+  .cc-cbno .canna-abbr { color: #5a8a6a; }
+  .cc-hhc  .canna-abbr { color: #7a5a9a; }
+
+  .canna-full { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+  .canna-card p { font-size: 0.85rem; color: var(--text-muted); max-width: 100%; margin-bottom: 0; line-height: 1.6; }
+  .canna-badge {
+    display: inline-block; margin-bottom: 0.6rem;
+    font-family: 'DM Mono', monospace; font-size: 0.58rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.15rem 0.5rem; border-radius: 1px;
+  }
+  .badge-psycho { background: rgba(139,58,42,0.12); color: var(--rust); }
+  .badge-non    { background: rgba(74,140,92,0.12);  color: var(--green-brig); }
+  .badge-mild   { background: rgba(107,78,122,0.12); color: var(--purple); }
+  .badge-acid   { background: rgba(176,90,58,0.12);  color: #b05a3a; }
+
+  /* TERPENE CARDS */
+  .terp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem; margin: 2rem 0;
+  }
+  .terp-card {
+    background: white; border: 1px solid #e8e2d6;
+    padding: 1.5rem 1.75rem; position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .terp-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(30,58,47,0.09); }
+  .terp-icon { font-size: 1.8rem; margin-bottom: 0.5rem; line-height: 1; }
+  .terp-name {
+    font-family: 'Playfair Display', serif; font-size: 1.15rem;
+    font-weight: 700; color: var(--green-deep); margin-bottom: 0.15rem;
+  }
+  .terp-sci { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  .terp-aroma {
+    font-family: 'DM Mono', monospace; font-size: 0.6rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--amber); margin-bottom: 0.6rem;
+  }
+  .terp-card p { font-size: 0.85rem; color: var(--text-muted); max-width: 100%; margin-bottom: 0; line-height: 1.6; }
+  .terp-receptor {
+    margin-top: 0.5rem; font-family: 'DM Mono', monospace;
+    font-size: 0.58rem; color: var(--green-brig); letter-spacing: 0.06em;
+  }
+
+  /* FLAVONOID TABLE */
+  .flav-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.88rem; }
+  .flav-table th {
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--purple-light);
+    border-bottom: 2px solid rgba(107,78,122,0.25); padding: 0.75rem 1rem;
+    text-align: left; background: #f5f0f8;
+  }
+  .flav-table td { padding: 0.9rem 1rem; border-bottom: 1px solid #e8e2d6; color: var(--text); vertical-align: top; }
+  .flav-table tr:hover td { background: #f8f4fc; }
+  .flav-table td:first-child { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--purple); }
+
+  /* ENTOURAGE SECTION */
+  .entourage-strip {
+    background: linear-gradient(135deg, var(--dark) 0%, #1e2a1a 100%);
+    padding: 4rem 6vw; margin: 3rem 0; position: relative; overflow: hidden;
+  }
+  .entourage-strip::before {
+    content: 'ENTOURAGE'; position: absolute; right: -2vw; top: -1rem;
+    font-family: 'Playfair Display', serif; font-size: 12vw; font-weight: 900;
+    color: rgba(255,255,255,0.025); user-select: none;
+  }
+  .entourage-strip .section-label { color: var(--green-light); }
+  .entourage-strip h2 { color: var(--cream); }
+  .entourage-strip p { color: rgba(245,240,232,0.68); max-width: 680px; }
+  .entourage-strip .tech-box { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
+  .entourage-strip .tech-tag { color: var(--amber-light); }
+  .entourage-strip .tech-box::before { background: var(--amber); }
+  .entourage-strip .tech-box p { color: rgba(245,240,232,0.8); }
+  .entourage-strip .tech-box code { background: rgba(200,131,42,0.2); color: var(--amber-light); }
+
+  /* BIG TABLE */
+  .data-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.88rem; }
+  .data-table th {
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--green-brig);
+    border-bottom: 2px solid var(--green-pale); padding: 0.75rem 1rem;
+    text-align: left; background: #f0ede4;
+  }
+  .data-table td { padding: 0.85rem 1rem; border-bottom: 1px solid #e8e2d6; color: var(--text); vertical-align: top; }
+  .data-table tr:hover td { background: #f8f5ef; }
+  .data-table td:first-child { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--green-deep); }
+
+  /* CLOSING */
+  .closing {
+    background: var(--dark); padding: 5rem 6vw;
+    position: relative; overflow: hidden;
+  }
+  .closing::before {
+    content: 'PLANT'; position: absolute; bottom: -2rem; right: -1rem;
+    font-family: 'Playfair Display', serif; font-size: 18vw; font-weight: 900;
+    color: rgba(255,255,255,0.018); user-select: none;
+  }
+  .closing .section-label { color: var(--green-light); }
+  .closing h2 { color: var(--cream); }
+  .closing p { color: rgba(245,240,232,0.65); }
+  .closing h3 { color: var(--green-light); }
+
+  .cta-box {
+    margin-top: 3rem; border: 1px solid rgba(255,255,255,0.1);
+    padding: 2rem; max-width: 620px; position: relative; z-index: 1;
+  }
+  .cta-box::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 2px; background: linear-gradient(90deg, var(--green-brig), var(--amber-light));
+  }
+  .cta-box p { font-style: italic; font-family: 'Playfair Display', serif; font-size: 1.05rem; color: rgba(245,240,232,0.82); margin-bottom: 1rem; }
+  .cta-sign { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; color: var(--green-light); }
+
+  footer {
+    background: #0d0d08; padding: 2rem 6vw;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+  }
+  footer p { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: rgba(245,240,232,0.22); letter-spacing: 0.1em; margin: 0; max-width: 100%; }
+  .footer-badge { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; color: var(--green-light); border: 1px solid rgba(122,184,147,0.25); padding: 0.3rem 0.75rem; }
+
+  .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--green-pale), transparent); margin: 0.5rem 0; }
+
+  .disclaimer { background: #f8f4ec; border-top: 1px solid #e0dbd0; padding: 2rem 6vw; font-size: 0.78rem; color: var(--text-muted); font-style: italic; }
+
+  .ref-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+  .ref-list li {
+    font-size: 0.82rem; color: var(--text-muted); padding: 0.5rem 0;
+    border-bottom: 1px solid #e8e2d6; font-family: 'DM Mono', monospace;
+    line-height: 1.6;
+  }
+  .ref-list li::before { content: '[' attr(data-n) '] '; color: var(--green-brig); font-weight: bold; }
+
+  /* SPECTRUM BAR */
+  .spectrum-bar { margin: 2rem 0; }
+  .spectrum-track {
+    display: flex; gap: 3px; height: 38px; border-radius: 2px; overflow: hidden; margin-bottom: 0.75rem;
+  }
+  .spectrum-seg {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Mono', monospace; font-size: 0.55rem;
+    letter-spacing: 0.05em; color: white; font-weight: bold; cursor: default;
+    transition: flex 0.3s;
+  }
+  .spectrum-seg:hover { flex: 2; }
+
+
+  .cite-link {
+    color: var(--green-brig);
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78em;
+  }
+  .cite-link:hover { color: var(--amber); text-decoration: underline; }
+  sup { line-height: 0; }
+  .ref-vancouver {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #e8e2d6;
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    gap: 0 0.4rem;
+    align-items: start;
+  }
+  .ref-num { color: var(--green-brig); font-weight: bold; padding-top: 0.05rem; }
+  .ref-doi { display: block; margin-top: 0.22rem; }
+  .ref-doi a { color: var(--blue-light); word-break: break-all; font-size: 0.71rem; }
+  .ref-doi a:hover { color: var(--amber); }
+
+  @media (max-width: 640px) {
+    .canna-grid, .terp-grid { grid-template-columns: 1fr; }
+    .hero { padding: 3rem 5vw 4rem; }
+    .section { padding: 3rem 5vw; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="molecule-grid"></div>
+  <div class="hero-bg-text">PLANT</div>
+  <div class="hero-tag">Phytochemistry · Cannabis sativa L.</div>
+  <h1>The Cannabis Plant:<br><em>A Complete Guide</em> to Its<br><span class="amber">Chemical Architecture</span></h1>
+  <p class="hero-subtitle">Over 500 distinct compounds. Cannabinoids, terpenes, flavonoids, alkaloids, and beyond. A comprehensive, evidence-based deep dive into what the cannabis plant is actually made of — and what the science says it does.</p>
+  <div class="hero-author">
+    <div class="author-dot">AB</div>
+    <div class="author-info">
+      <strong>Amrit Baral, PhD, MBBS, MPH</strong>
+      Physician-Scientist | Cannabis &amp; Psychedelics Researcher<br>
+      Postdoctoral Fellow · Johns Hopkins Bloomberg School of Public Health
+    </div>
+  </div>
+  <div class="scroll-indicator"><div class="scroll-line"></div>Scroll</div>
+</header>
+
+<!-- INTRO -->
+<div class="intro-block">
+  <blockquote class="pull-quote">
+    "Cannabis is not a single drug. It is a chemical ecosystem — a living pharmacy of hundreds of compounds that interact with each other, with our biology, and with our pharmacology in ways we are only beginning to understand."
+    <cite>— Amrit Baral, PhD, MBBS, MPH</cite>
+  </blockquote>
+</div>
+
+<!-- SECTION 01: THE PLANT -->
+<section class="section">
+  <div class="section-label">Section 01 — Botany</div>
+  <h2>The Plant Itself</h2>
+  <p><em>Cannabis sativa</em> L. is a dioecious, annual flowering plant in the family Cannabaceae. It is one of humanity's oldest cultivated crops — archaeological evidence places its use in central Asia as far back as 10,000 years ago. Today, it is simultaneously one of the most legislatively restricted and one of the most scientifically studied plants on Earth.</p>
+  <p>Three species are commonly referenced: <em>Cannabis sativa</em>, <em>Cannabis indica</em>, and <em>Cannabis ruderalis</em>, though modern genomic analyses increasingly treat these as subspecies or chemotypes of a single species rather than distinct taxa. What matters scientifically is not the label on the jar, but the chemotype — the specific chemical profile of cannabinoids, terpenes, and other compounds a given cultivar produces.</p>
+  <p>The female plant produces trichomes — microscopic resin glands concentrated in the flowering tops (colas) — which are the primary factories for phytocannabinoids and terpenes. These compounds are biosynthesized through the methylerythritol phosphate (MEP) and polyketide pathways, with geranyl pyrophosphate (GPP) serving as a key precursor to the major cannabinoids.</p>
+
+  <div class="analogy-box">
+    <div class="analogy-tag">🌿 Plain Language</div>
+    <p>Think of the cannabis plant like a <strong>living apothecary</strong>. It produces hundreds of chemical compounds — each with its own flavor, effect, and biological function. Some are well-known celebrities (THC, CBD). Many are quiet supporting actors (CBG, terpenes, flavonoids) whose roles are only now being understood. Together they form a chemical symphony — and the sum is consistently more interesting than any individual part.</p>
+  </div>
+
+  <div class="tech-box">
+    <div class="tech-tag">⚗️ Technical</div>
+    <p>The cannabis plant contains at least <code>545 distinct compounds<sup><a href="#ref1" class="cite-link">[1]</a></sup></code>, of which approximately 144 are classified as phytocannabinoids<sup><a href="#ref1" class="cite-link">[1]</a></sup>. Biosynthesis begins with olivetolic acid (from the polyketide pathway) condensing with geranyl pyrophosphate (GPP) to form cannabigerolic acid (CBGA) — the so-called "mother cannabinoid." CBGA is then acted upon by three distinct synthase enzymes: <code>THCA synthase</code>, <code>CBDA synthase</code>, and <code>CBCA synthase</code>, yielding THCA, CBDA, and CBCA respectively. Decarboxylation (heat or light) removes the carboxyl group (–COOH) to yield the active neutral forms: THC, CBD, and CBC.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 02: MAJOR CANNABINOIDS -->
+<section class="section">
+  <div class="section-label amber">Section 02 — Major Cannabinoids</div>
+  <h2>The Major Cannabinoids</h2>
+  <p>The term "major" refers to cannabinoids typically present in significant concentrations (>0.1%) in most cannabis chemotypes. These are the most clinically studied and best characterized compounds in the plant.</p>
+
+  <div class="canna-grid">
+    <!-- THC -->
+    <div class="canna-card cc-thc">
+      <div class="canna-abbr">THC</div>
+      <div class="canna-full">Δ⁹-Tetrahydrocannabinol</div>
+      <span class="canna-badge badge-psycho">Psychoactive</span>
+      <p>The primary intoxicating compound in cannabis. Partial agonist at CB1 and CB2 receptors. Produces euphoria, altered perception, analgesia, anti-nausea, and appetite stimulation. The most pharmacologically studied phytocannabinoid. Also exists as THCA (the acid precursor) in raw plant material.</p>
+    </div>
+    <!-- CBD -->
+    <div class="canna-card cc-cbd">
+      <div class="canna-abbr">CBD</div>
+      <div class="canna-full">Cannabidiol</div>
+      <span class="canna-badge badge-non">Non-Intoxicating</span>
+      <p>Non-intoxicating. Acts as a negative allosteric modulator at CB1, inhibits FAAH (raising anandamide), and interacts with TRPV1, 5-HT1A, and GPR55 receptors. FDA-approved (Epidiolex) for Dravet syndrome and Lennox-Gastaut syndrome. Anti-inflammatory, anxiolytic, anticonvulsant properties well-documented.</p>
+    </div>
+    <!-- CBG -->
+    <div class="canna-card cc-cbg">
+      <div class="canna-abbr">CBG</div>
+      <div class="canna-full">Cannabigerol</div>
+      <span class="canna-badge badge-non">Non-Intoxicating</span>
+      <p>The biosynthetic precursor to all major cannabinoids. Partial agonist at both CB1 and CB2. Increasingly studied for antibacterial activity (including MRSA), neuroprotection in Huntington's disease models, and IBS. Typically found in low concentrations (&lt;1%) but high-CBG cultivars now exist.</p>
+    </div>
+    <!-- CBC -->
+    <div class="canna-card cc-cbc">
+      <div class="canna-abbr">CBC</div>
+      <div class="canna-full">Cannabichromene</div>
+      <span class="canna-badge badge-non">Non-Intoxicating</span>
+      <p>Third most abundant cannabinoid in many strains. Does not bind well to CB1 — instead activates TRPV1 and TRPA1 receptors. Demonstrates anti-inflammatory, antidepressant, and potential neurogenesis-promoting effects. Shown to promote adult neuroprogenitor cell viability (Shinjyo & Di Marzo<sup><a href="#ref9" class="cite-link">[9]</a></sup>).</p>
+    </div>
+  </div>
+
+  <div class="evidence-box">
+    <div class="evidence-tag">📖 Key Evidence — THC</div>
+    <p><strong>Analgesia:</strong> Whiting et al.<sup><a href="#ref2" class="cite-link">[2]</a></sup> — Moderate-quality evidence for cannabinoids in chronic neuropathic pain. Multiple RCTs support THC/CBD combinations for pain reduction.</p>
+    <p><strong>Anti-emesis:</strong> THC (dronabinol) is FDA-approved for chemotherapy-induced nausea since 1985. Tramèr et al.<sup><a href="#ref3" class="cite-link">[3]</a></sup> confirmed superiority over placebo.</p>
+    <p><strong>Spasticity:</strong> Nabiximols (THC:CBD 1:1 oromucosal spray) approved in 30+ countries for MS spasticity. Collin et al.<sup><a href="#ref4" class="cite-link">[4]</a></sup> demonstrated significant spasm reduction in RCT.</p>
+  </div>
+
+  <div class="evidence-box">
+    <div class="evidence-tag">📖 Key Evidence — CBD</div>
+    <p><strong>Epilepsy:</strong> Devinsky et al.<sup><a href="#ref5" class="cite-link">[5]</a></sup> — landmark RCT showing CBD reduced seizure frequency by 38.9% vs 13.3% placebo in Dravet syndrome (p&lt;0.001).</p>
+    <p><strong>Anxiety:</strong> Blessing et al.<sup><a href="#ref6" class="cite-link">[6]</a></sup> — comprehensive review confirming anxiolytic effects of CBD across multiple preclinical models and limited human studies. Bergamaschi et al.<sup><a href="#ref7" class="cite-link">[7]</a></sup> showed acute CBD reduced anxiety in SAD patients during public speaking.</p>
+    <p><strong>Psychosis:</strong> McGuire et al.<sup><a href="#ref8" class="cite-link">[8]</a></sup> — CBD significantly improved positive psychotic symptoms in schizophrenia patients in a double-blind RCT. Proposed mechanism: indirect CB1 modulation via anandamide elevation.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 03: MINOR CANNABINOIDS -->
+<section class="section">
+  <div class="section-label amber">Section 03 — Minor Cannabinoids</div>
+  <h2>The Minor Cannabinoids</h2>
+  <p>Often overshadowed by THC and CBD, the minor cannabinoids represent a rich, largely underexplored chemical space. Present in smaller concentrations, many demonstrate unique receptor pharmacology and therapeutic potential that does not simply replicate the effects of the major cannabinoids.</p>
+
+  <div class="canna-grid">
+    <div class="canna-card cc-cbn">
+      <div class="canna-abbr">CBN</div>
+      <div class="canna-full">Cannabinol</div>
+      <span class="canna-badge badge-mild">Mildly Active</span>
+      <p>Formed by oxidative degradation of THC. Weakly psychoactive. Moderate CB2 agonist. Popularly marketed for sleep — but evidence remains limited and largely anecdotal. Demonstrates antibacterial and anti-inflammatory activity. May stimulate bone marrow stromal cells, suggesting osteogenic potential (Scutt & Williamson<sup><a href="#ref15" class="cite-link">[15]</a></sup>).</p>
+    </div>
+    <div class="canna-card cc-thcv">
+      <div class="canna-abbr">THCV</div>
+      <div class="canna-full">Tetrahydrocannabivarin</div>
+      <span class="canna-badge badge-mild">Dose-Dependent</span>
+      <p>Acts as a CB1 neutral antagonist at low doses; partial agonist at high doses. Suppresses appetite (opposite of THC). Studied for type 2 diabetes and metabolic syndrome — Jadoon et al.<sup><a href="#ref10" class="cite-link">[10]</a></sup> showed THCV improved fasting glucose and adiponectin in T2DM patients. May reduce seizure activity.</p>
+    </div>
+    <div class="canna-card cc-cbdv">
+      <div class="canna-abbr">CBDV</div>
+      <div class="canna-full">Cannabidivarin</div>
+      <span class="canna-badge badge-non">Non-Intoxicating</span>
+      <p>Propyl analogue of CBD. Activates TRPV1 and inhibits diacylglycerol lipase (DAGL). GW Pharmaceuticals conducted Phase 2 trials in autism spectrum disorder and Rett syndrome. Hill et al.<sup><a href="#ref11" class="cite-link">[11]</a></sup> demonstrated anticonvulsant effects in multiple rodent seizure models. Under investigation for autism-related communication.</p>
+    </div>
+    <div class="canna-card cc-thca">
+      <div class="canna-abbr">THCA</div>
+      <div class="canna-full">Δ⁹-THCA (Acid Form)</div>
+      <span class="canna-badge badge-acid">Precursor / Raw</span>
+      <p>The raw, non-psychoactive acid form of THC found in live plant material. Does not bind CB1 significantly — but activates TRPM8 and inhibits FAAH. Emerging evidence for anti-inflammatory (Rock et al.<sup><a href="#ref12" class="cite-link">[12]</a></sup>) and neuroprotective properties. Rapidly converts to THC upon heating (decarboxylation).</p>
+    </div>
+    <div class="canna-card cc-cbda">
+      <div class="canna-abbr">CBDA</div>
+      <div class="canna-full">Cannabidiolic Acid</div>
+      <span class="canna-badge badge-acid">Precursor / Raw</span>
+      <p>Acid precursor of CBD. A potent 5-HT1A receptor agonist — more potent than CBD itself at this receptor. Studied for anti-nausea (Rock & Parker<sup><a href="#ref13" class="cite-link">[13]</a></sup>) and anti-anxiety properties. Straiker et al. note CBDA's selectivity at 5-HT1A may have distinct clinical utility from CBD post-decarboxylation.</p>
+    </div>
+    <div class="canna-card cc-cbga">
+      <div class="canna-abbr">CBGA</div>
+      <div class="canna-full">Cannabigerolic Acid</div>
+      <span class="canna-badge badge-acid">Precursor / Raw</span>
+      <p>The biosynthetic "mother" of all cannabinoids. Most CBGA is converted to THCA, CBDA, or CBCA during plant maturation. Residual CBGA in mature plants demonstrates antibacterial, anti-proliferative (colon cancer), and PPAR-γ agonist activity. Van Breemen et al.<sup><a href="#ref14" class="cite-link">[14]</a></sup> showed CBGA binds SARS-CoV-2 spike protein.</p>
+    </div>
+    <div class="canna-card cc-cbc">
+      <div class="canna-abbr">CBCA</div>
+      <div class="canna-full">Cannabichromenic Acid</div>
+      <span class="canna-badge badge-acid">Precursor / Raw</span>
+      <p>Acid precursor to CBC. Limited direct research but shares the biosynthetic importance of other acid-form cannabinoids. Decarboxylates to CBC upon heating. Found in higher concentrations in younger plant material and certain tropical cultivars.</p>
+    </div>
+    <div class="canna-card cc-hhc">
+      <div class="canna-abbr">Δ⁸-THC</div>
+      <div class="canna-full">Delta-8-Tetrahydrocannabinol</div>
+      <span class="canna-badge badge-mild">Mildly Psychoactive</span>
+      <p>An isomer of Δ⁹-THC naturally occurring in trace amounts. Binds CB1 with lower affinity, producing milder psychoactive effects. Humulene et al. (1966, Mechoulam) noted its antiemetic properties in pediatric oncology — remarkably, 100% efficacy in a small case series. Regulatory status varies significantly by jurisdiction.</p>
+    </div>
+  </div>
+
+  <div class="analogy-box">
+    <div class="analogy-tag">🌿 Plain Language — The Supporting Cast</div>
+    <p>If THC and CBD are the lead actors in the cannabis story, the minor cannabinoids are the <strong>supporting cast without whom the plot doesn't fully work</strong>. Each brings something unique to the stage — THCV suppresses appetite while THC increases it. CBDA is more potent than CBD at the serotonin receptor that governs nausea. CBDV may hold the key to autism-related communication challenges. These aren't footnotes — they're chapters we haven't finished reading yet.</p>
+  </div>
+
+  <h3>A Note on Research Gaps</h3>
+  <p>The overwhelming majority of cannabinoid research focuses on THC and CBD. For most minor cannabinoids, we have promising preclinical data — cell cultures, animal models — but robust human clinical trials remain scarce. This is not evidence that these compounds don't work; it is evidence that the research has not yet been done at the scale needed. Scheduling restrictions, funding barriers, and the complexity of standardizing cannabis preparations have all slowed progress. This is the frontier where the next decade of cannabinoid medicine will be won or lost.</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 04: TERPENES -->
+<section class="section">
+  <div class="section-label" style="color:#c8832a">Section 04 — Terpenes</div>
+  <h2>Terpenes: The Aromatic Intelligence of Cannabis</h2>
+  <p>Terpenes are aromatic hydrocarbons produced by a vast range of plants — and cannabis produces them in extraordinary abundance and variety. Over 200 terpenes have been identified in cannabis. They give each cultivar its distinctive aroma: skunky, citrusy, piney, floral, or earthy. But they do far more than smell good.</p>
+  <p>Critically, several terpenes are pharmacologically active at the concentrations found in cannabis, directly interacting with receptors in the endocannabinoid system, serotonin system, and GABAergic pathways. The line between "just a flavoring" and "pharmacologically active compound" is blurring rapidly in terpene research.</p>
+
+  <div class="evidence-box">
+    <div class="evidence-tag">📖 Landmark Research</div>
+    <p><strong>Russo<sup><a href="#ref16" class="cite-link">[16]</a></sup></strong> — "Taming THC" — the foundational paper on cannabis terpenes. Proposed that terpenes produce "cannabis entourage effects" by modulating THC activity, and outlined specific pharmacological mechanisms for major terpenes including β-caryophyllene's direct CB2 agonism.</p>
+    <p><strong>LaVigne et al.<sup><a href="#ref17" class="cite-link">[17]</a></sup> — demonstrated that terpenes alone activate cannabinoid receptors, produce cannabinoid-like behaviors in mice, and augment CB1 receptor signaling via intracellular cAMP modulation. First direct mechanistic evidence for terpene-cannabinoid synergy.</p>
+  </div>
+
+  <h3>Major Terpenes</h3>
+  <div class="terp-grid">
+    <div class="terp-card">
+      <div class="terp-icon">🌲</div>
+      <div class="terp-name">Myrcene</div>
+      <div class="terp-sci">β-Myrcene · C₁₀H₁₆</div>
+      <div class="terp-aroma">Earthy · Musky · Herbal · Mango</div>
+      <p>Most abundant terpene in most cannabis cultivars, often >50% of the terpene profile. Sedating at high concentrations. Proposed to facilitate THC crossing the blood-brain barrier by increasing membrane permeability. Linalool and myrcene dominate "indica-type" effects in many cultivars.</p>
+      <div class="terp-receptor">Receptor activity: potentiates CB1 signaling · TRPV1 agonist</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🍋</div>
+      <div class="terp-name">Limonene</div>
+      <div class="terp-sci">D-Limonene · C₁₀H₁₆</div>
+      <div class="terp-aroma">Citrus · Lemon · Orange · Fresh</div>
+      <p>Second most common terpene. Rapidly absorbed via inhalation — brain levels detectable within minutes. Anxiolytic, antidepressant, and immune-modulating properties documented. Elevated 5-HT1A signaling proposed as mechanism (Russo, 2011). Also demonstrates anticancer activity in multiple in vitro and in vivo models (Vigushin et al.<sup><a href="#ref19" class="cite-link">[19]</a></sup>).</p>
+      <div class="terp-receptor">Receptor activity: 5-HT1A agonist · adenosine A2A receptor</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🌿</div>
+      <div class="terp-name">β-Caryophyllene</div>
+      <div class="terp-sci">Beta-Caryophyllene · C₁₅H₂₄</div>
+      <div class="terp-aroma">Spicy · Pepper · Woody · Cloves</div>
+      <p>The only terpene known to directly activate the endocannabinoid system — a selective CB2 agonist (Gertsch et al.<sup><a href="#ref18" class="cite-link">[18]</a></sup>). This means it is simultaneously a dietary terpene found in black pepper and a CB2 ligand. Anti-inflammatory, neuroprotective, and analgesic via CB2-mediated pathways. Found in copaiba oil, black pepper, hops.</p>
+      <div class="terp-receptor">Receptor activity: CB2 full agonist · PPAR-γ agonist</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🌺</div>
+      <div class="terp-name">Linalool</div>
+      <div class="terp-sci">Linalool · C₁₀H₁₈O</div>
+      <div class="terp-aroma">Floral · Lavender · Spice · Sweet</div>
+      <p>Responsible for lavender's calming properties — and cannabis varieties rich in linalool are similarly associated with sedation and anxiolysis. Modulates GABA-A receptors, producing benzodiazepine-like effects without binding the benzodiazepine site. Katsuyama et al. (2015) demonstrated anti-anxiety and antidepressant effects in mice. Also locally anesthetic.</p>
+      <div class="terp-receptor">Receptor activity: GABA-A modulator · glutamate receptor inhibition</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🌲</div>
+      <div class="terp-name">α-Pinene</div>
+      <div class="terp-sci">Alpha-Pinene · C₁₀H₁₆</div>
+      <div class="terp-aroma">Pine · Fresh · Forest · Sharp</div>
+      <p>The most common naturally occurring terpene in the world. In cannabis, α-pinene is hypothesized to counteract THC-induced short-term memory impairment by inhibiting acetylcholinesterase — the same mechanism as pharmaceutical memory drugs. Bronchodilator at low inhaled concentrations. Anti-inflammatory via NF-κB pathway inhibition (Park et al.<sup><a href="#ref20" class="cite-link">[20]</a></sup>).</p>
+      <div class="terp-receptor">Receptor activity: AChE inhibitor · α-adrenergic agonist · GABA-A modulator</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🍃</div>
+      <div class="terp-name">Terpinolene</div>
+      <div class="terp-sci">Terpinolene · C₁₀H₁₆</div>
+      <div class="terp-aroma">Fresh · Floral · Pine · Herbal · Citrus</div>
+      <p>Multifaceted aroma — simultaneously floral, herbaceous, and citrusy. Primarily found as a minor terpene but dominant in certain cultivars (Jack Herer lineages). Demonstrates antioxidant, anticancer (PDGFRβ inhibition), and sedative properties. Reduces myocardial ischemia-reperfusion injury in animal models. Weakly sedating.</p>
+      <div class="terp-receptor">Receptor activity: central nervous system depressant properties</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🌱</div>
+      <div class="terp-name">Humulene</div>
+      <div class="terp-sci">α-Humulene · C₁₅H₂₄</div>
+      <div class="terp-aroma">Earthy · Woody · Hoppy · Subtle Spice</div>
+      <p>Found in hops, coriander, and basil. Appetite suppressant — notable given that most cannabis is associated with appetite increase. Anti-inflammatory via prostaglandin E1 inhibition and PGE2 suppression. Demonstrated antitumor activity (Legault & Pichette<sup><a href="#ref21" class="cite-link">[21]</a></sup>) and acts synergistically with β-caryophyllene in anti-inflammatory models.</p>
+      <div class="terp-receptor">Receptor activity: COX-1 and COX-2 inhibition · NF-κB pathway</div>
+    </div>
+    <div class="terp-card">
+      <div class="terp-icon">🌸</div>
+      <div class="terp-name">Ocimene</div>
+      <div class="terp-sci">β-Ocimene · C₁₀H₁₆</div>
+      <div class="terp-aroma">Sweet · Herbal · Floral · Tropical</div>
+      <p>A pleasant, sweet floral terpene associated with uplifting effects. Antifungal, antiviral, and antiseptic properties documented. Less studied than primary terpenes but found in many high-quality floral cannabis cultivars. Present also in mint, parsley, basil, and orchids. Emerging interest in antidiabetic properties.</p>
+      <div class="terp-receptor">Receptor activity: antifungal · antiviral mechanisms under investigation</div>
+    </div>
+  </div>
+
+  <h3>Notable Minor Terpenes</h3>
+  <table class="data-table">
+    <thead>
+      <tr><th>Terpene</th><th>Aroma</th><th>Reported Properties</th><th>Also Found In</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Bisabolol</td><td>Floral, sweet</td><td>Anti-irritant, anti-inflammatory, skin-healing, apoptosis in cancer cells</td><td>German chamomile, candeia tree</td></tr>
+      <tr><td>Camphene</td><td>Earthy, woody, pungent</td><td>Antioxidant; reduces cholesterol and triglycerides in animal models</td><td>Camphor tree, cypress, ginger</td></tr>
+      <tr><td>Geraniol</td><td>Rose, sweet, fruity</td><td>Neuroprotective; antifungal; antitumor; mosquito repellent</td><td>Rose, geranium, citronella</td></tr>
+      <tr><td>Nerolidol</td><td>Woody, floral, fresh bark</td><td>Sedative; antiparasitic (antiprotozoal); antifungal; skin penetration enhancer</td><td>Ginger, jasmine, lemongrass</td></tr>
+      <tr><td>Valencene</td><td>Sweet, fresh citrus, orange</td><td>Anti-inflammatory; insect repellent; potential skin benefits</td><td>Valencia oranges</td></tr>
+      <tr><td>Sabinene</td><td>Spicy, woody, black pepper</td><td>Antioxidant; antimicrobial; liver-protective</td><td>Carrot seed, nutmeg, black pepper</td></tr>
+      <tr><td>Phytol</td><td>Floral, balsamic, green</td><td>Anxiolytic (GABA modulation); antinociceptive; immunosuppressive in autoimmune models</td><td>Green tea, decomposed chlorophyll</td></tr>
+      <tr><td>Borneol</td><td>Camphor, minty, sharp</td><td>Blood-brain barrier penetration enhancer; antifatigue; analgesic</td><td>Mugwort, rosemary, camphor</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tech-box">
+    <div class="tech-tag">⚗️ Technical — Terpene Synergy Mechanisms</div>
+    <p>Three primary mechanisms explain how terpenes modulate cannabinoid activity: <code>(1) receptor-level interactions</code> — β-caryophyllene's direct CB2 agonism is the clearest example; <code>(2) pharmacokinetic modulation</code> — myrcene may increase membrane permeability, affecting bioavailability; and <code>(3) neurotransmitter system cross-talk</code> — linalool's GABA-A modulation and limonene's 5-HT1A agonism create polypharmacological effects alongside cannabinoid receptor activity. LaVigne et al.<sup><a href="#ref17" class="cite-link">[17]</a></sup> demonstrated via cAMP assays that α-humulene, geraniol, linalool, and α-terpineol produce statistically significant CB1 and CB2 signaling at physiologically relevant concentrations.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 05: FLAVONOIDS -->
+<section class="section">
+  <div class="section-label purple">Section 05 — Flavonoids</div>
+  <h2>Flavonoids: The Overlooked Third Pillar</h2>
+  <p>If cannabinoids get all the attention and terpenes are finally having their moment, flavonoids are the largely unknown third pillar of cannabis phytochemistry. Cannabis contains approximately 20 flavonoids, including some that are unique to the plant (cannflavins) and others shared across the plant kingdom. They contribute to the plant's color, UV protection, and pest resistance — but several demonstrate remarkable pharmacological properties.</p>
+
+  <div class="analogy-box">
+    <div class="analogy-tag">🌿 Plain Language</div>
+    <p>Flavonoids are the <strong>plant's color palette</strong> — they give cannabis its purple hues, protect it from UV damage, and help it deter pests. But increasingly we're finding they also have real biological activity in the human body. The cannflavins — flavonoids unique to cannabis — turn out to be remarkably potent anti-inflammatory compounds. Some are being studied for cancer and neurodegeneration. They've been ignored for too long.</p>
+  </div>
+
+  <table class="flav-table">
+    <thead>
+      <tr><th>Flavonoid</th><th>Type</th><th>Cannabis-Unique?</th><th>Key Properties</th><th>Evidence Level</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cannflavin A</td>
+        <td>Flavone</td>
+        <td>✅ Yes</td>
+        <td>Anti-inflammatory via LTB4 and PGE2 inhibition — 30× more potent than aspirin in inhibiting prostaglandin E2 (Barrett et al.<sup><a href="#ref22" class="cite-link">[22]</a></sup>). Antitumor in pancreatic cancer models (Bhatt et al., 2020).</td>
+        <td>Preclinical + early in vitro</td>
+      </tr>
+      <tr>
+        <td>Cannflavin B</td>
+        <td>Flavone</td>
+        <td>✅ Yes</td>
+        <td>Similar anti-inflammatory profile to Cannflavin A. Inhibits prostaglandin biosynthesis. Less studied than Cannflavin A but shares chemical backbone. Bhatt et al.<sup><a href="#ref23" class="cite-link">[23]</a></sup> also demonstrated anticancer activity in PDAC models.</td>
+        <td>Preclinical</td>
+      </tr>
+      <tr>
+        <td>Cannflavin C</td>
+        <td>Flavone</td>
+        <td>✅ Yes</td>
+        <td>Identified by Page & Boubakir (2012). Least studied of the three cannflavins. Structural relative of Cannflavins A and B. Biosynthetic genes (FLS and CYP450) recently identified.</td>
+        <td>Biochemical only</td>
+      </tr>
+      <tr>
+        <td>Quercetin</td>
+        <td>Flavonol</td>
+        <td>❌ Ubiquitous</td>
+        <td>Potent antioxidant; anti-inflammatory via NF-κB; antiviral; anticarcinogenic; quercetin supplements well-studied in humans. Found in high concentrations in cannabis leaves.</td>
+        <td>Strong (human trials)</td>
+      </tr>
+      <tr>
+        <td>Kaempferol</td>
+        <td>Flavonol</td>
+        <td>❌ Common</td>
+        <td>Associated with reduced risk of cancer mortality in epidemiological studies. Inhibits monoamine oxidase (MAO) — potentially antidepressant. Anti-inflammatory, neuroprotective.</td>
+        <td>Epidemiological + preclinical</td>
+      </tr>
+      <tr>
+        <td>Apigenin</td>
+        <td>Flavone</td>
+        <td>❌ Common</td>
+        <td>Modulates GABA-A receptors (anxiolytic). Inhibits aromatase (estrogen regulation). Notable for absorption enhancement of other polyphenols. Also found in chamomile — explains some of chamomile tea's sedative properties.</td>
+        <td>Preclinical + in vitro</td>
+      </tr>
+      <tr>
+        <td>Luteolin</td>
+        <td>Flavone</td>
+        <td>❌ Common</td>
+        <td>Neuroprotective; inhibits neuroinflammation; mast cell stabilizer. Studied for autism spectrum disorders (ASD) and neuroinflammatory conditions. Crosses blood-brain barrier. Potent antioxidant.</td>
+        <td>Preclinical + early human</td>
+      </tr>
+      <tr>
+        <td>Orientin</td>
+        <td>Flavone C-glycoside</td>
+        <td>❌ Uncommon</td>
+        <td>Cardioprotective; antiviral; antidiabetic properties. Inhibits reactive oxygen species (ROS). Found in cannabis leaves and some spices. Limited cannabis-specific research.</td>
+        <td>Preclinical</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="evidence-box">
+    <div class="evidence-tag">📖 Key Research — Cannflavins</div>
+    <p><strong>Barrett et al. (1986) Biochemical Pharmacology</strong> — Landmark paper identifying cannflavins as inhibitors of eicosanoid production. Cannflavin A inhibited PGE2 biosynthesis approximately 30× more potently than aspirin in a direct comparison. This finding remained largely unexploited for over 30 years due to regulatory barriers.</p>
+    <p><strong>Bhatt et al.<sup><a href="#ref23" class="cite-link">[23]</a></sup> — University of Guelph identified the biosynthetic genes for cannflavins (FLS3, FLS1 and CYP450 enzymes), enabling yeast-based production. Cannflavin A and B demonstrated significant antitumor activity in pancreatic ductal adenocarcinoma (PDAC) — one of the most treatment-resistant cancers. This opens the door to cannflavin-based pharmaceuticals independent of the whole plant.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 06: OTHER COMPOUNDS -->
+<section class="section">
+  <div class="section-label blue">Section 06 — Beyond Cannabinoids</div>
+  <h2>Other Biologically Active Compounds</h2>
+  <p>Cannabis is more than cannabinoids, terpenes, and flavonoids. A comprehensive understanding of the plant requires acknowledging the full spectrum of its phytochemical output.</p>
+
+  <h3>Stilbenes</h3>
+  <p>Cannabis contains several stilbenoids, including <em>cannithrene 1 and 2</em>, and resveratrol-related compounds. Resveratrol, best known from red wine, demonstrates cardioprotective and anti-aging properties via SIRT1 activation and NF-κB inhibition. Its presence in cannabis adds another layer of anti-inflammatory potential.</p>
+
+  <h3>Alkaloids</h3>
+  <p>Spermidine and other polyamines are found in cannabis seeds. Hordenine and trigonelline have also been identified. These compounds have relatively limited research in the cannabis context, but polyamines have established roles in cellular proliferation, neuroprotection, and autophagy regulation. Choline and trigonelline may contribute to metabolic effects of cannabis seed consumption.</p>
+
+  <h3>Vitamins, Fatty Acids & Proteins</h3>
+  <p>Cannabis seeds (hemp seeds) are nutritionally exceptional — containing all essential amino acids, high concentrations of gamma-linolenic acid (GLA), and a near-ideal omega-6 to omega-3 ratio of approximately 3:1. The seeds contain vitamins E, B1, and B2, and minerals including magnesium, phosphorus, and potassium. Hemp seed oil demonstrates beneficial effects on cardiovascular markers in clinical studies (Callaway et al.<sup><a href="#ref27" class="cite-link">[27]</a></sup>).</p>
+
+  <h3>Chlorophyll & Carotenoids</h3>
+  <p>Cannabis leaves are rich in chlorophyll and a range of carotenoids including β-carotene and lutein. These compounds are not unique to cannabis but contribute to the overall antioxidant capacity of whole-plant preparations and may influence the color and stability of cannabis extracts.</p>
+
+  <div class="analogy-box">
+    <div class="analogy-tag">🌿 Plain Language — The Full Picture</div>
+    <p>We've spent decades arguing about one compound — THC — while the plant quietly contained an entire library of pharmacologically active molecules. Stilbenes that protect the heart. Alkaloids that influence cell growth. Seeds with a perfect fatty acid profile. This is why the conversation is shifting from "cannabis" as a single drug to cannabis as a <strong>complex botanical medicine</strong> — one that deserves the same rigorous, multifaceted research we apply to the most important therapeutic plants on Earth.</p>
+  </div>
+</section>
+
+<!-- ENTOURAGE EFFECT -->
+<div class="entourage-strip">
+  <div class="section-label">Section 07 — Synergy</div>
+  <h2>The Entourage Effect</h2>
+  <p>Coined by Mechoulam & Ben-Shabat<sup><a href="#ref24" class="cite-link">[24]</a></sup> and systematically developed by Russo (2011), the entourage effect proposes that the whole-plant cannabis preparation produces greater therapeutic effects than any single isolated compound. This is not mysticism — it has mechanistic grounding.</p>
+  <p>CBD modulates the psychoactive properties of THC by acting as a negative allosteric modulator at CB1. Terpenes like α-pinene may counteract THC-induced memory impairment. β-Caryophyllene adds CB2-mediated anti-inflammatory activity independent of THC. Flavonoids contribute antioxidant and anti-inflammatory effects that extend beyond the cannabinoid receptor system entirely.</p>
+  <p>The clinical implications are significant: full-spectrum extracts may outperform isolates for certain indications, and the therapeutic window of undesirable THC side effects may be broadened by the presence of modulating compounds.</p>
+
+  <div class="tech-box" style="margin-top:2rem;">
+    <div class="tech-tag" style="color:var(--amber-light);">⚗️ Technical — Evidence & Controversy</div>
+    <p>Pamplona et al.<sup><a href="#ref25" class="cite-link">[25]</a></sup> demonstrated that full-spectrum CBD-rich extract required lower doses to achieve equivalent anticonvulsant effects compared to CBD isolate in a retrospective analysis. Ferber et al.<sup><a href="#ref26" class="cite-link">[26]</a></sup> conducted a double-blind RCT showing terpene-enriched CBD reduced anxiety in healthy adults versus CBD alone. However, Cogan et al. (2022) noted that much entourage effect evidence remains indirect, and called for standardized methodology in future trials. The <code>polypharmacological</code> nature of cannabis is real — but the magnitude and consistency of synergy across indications requires larger, better-controlled human trials. LaVigne et al.<sup><a href="#ref17" class="cite-link">[17]</a></sup> provided the most rigorous direct mechanistic evidence to date, demonstrating terpenes activate cannabinoid receptors independently and synergistically via <code>cAMP</code> signal transduction.</p>
+  </div>
+</div>
+
+<!-- SECTION 08: RESEARCH GAPS -->
+<section class="section">
+  <div class="section-label">Section 08 — Where Science Stands</div>
+  <h2>What We Know, What We Don't, and Why It Matters</h2>
+
+  <p>I want to be precise about the state of the evidence, because the cannabis space is unfortunately crowded with both excessive skepticism and excessive enthusiasm — neither of which serves patients or science well.</p>
+
+  <h3>What We Know With High Confidence</h3>
+  <p>The evidence is strongest for THC/CBD combinations in neuropathic pain, CBD as an anticonvulsant in Dravet and Lennox-Gastaut syndromes, THC as an antiemetic and appetite stimulant, and nabiximols for MS spasticity. These are supported by multiple RCTs and regulatory approvals. The pharmacology of CB1, CB2, and their major ligands is well-characterized at the molecular level.</p>
+
+  <h3>What Is Promising But Incomplete</h3>
+  <p>Minor cannabinoids (THCV, CBDV, CBG, CBC), most terpene therapeutic claims, flavonoid biology in cannabis, and virtually all entourage effect claims in specific disease contexts fall into this category. We have compelling preclinical data, some early-phase human trials, and mechanistic rationale — but not the longitudinal, large-scale RCTs needed for clinical guideline incorporation. This is not a flaw in the compounds; it is a failure of the research infrastructure around them.</p>
+
+  <h3>What Remains Unknown</h3>
+  <p>The full pharmacological map of the 100+ minor cannabinoids. The clinical significance of acid-form cannabinoids (THCA, CBDA, CBGA) in non-decarboxylated preparations. Optimal dosing, delivery method, and formulation for most conditions. Long-term effects of terpene inhalation. Population-specific pharmacogenomics of cannabinoid metabolism (CYP2C9, CYP3A4 polymorphisms). The pediatric safety profile of minor cannabinoids. These are not questions we cannot answer — they are questions we have not yet adequately resourced to answer.</p>
+
+  <div class="evidence-box">
+    <div class="evidence-tag">📖 Research Infrastructure Gap</div>
+    <p>A 2019 analysis (Katz et al., Drug and Alcohol Dependence) found that less than 2% of published cannabis research involves clinical trials of therapeutic use, while over 40% studies harms. This asymmetry reflects decades of Schedule I scheduling in the US and equivalent restrictions globally — not the scientific priority of the questions. The field is catching up rapidly, but the gap between what we have discovered biologically and what we have validated clinically remains large.</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<div class="closing">
+  <div class="section-label">Section 09 — Closing Perspective</div>
+  <h2>A Plant Worth Taking Seriously</h2>
+  <p>After 19 years in medicine and research, and a doctoral dissertation dedicated to cannabis's effects in cancer, I can say with certainty: this plant is not simple, and the science around it is not settled. That is precisely what makes it extraordinary.</p>
+  <p>We have a plant that produces at least 144 known cannabinoids, 200+ terpenes, 20 flavonoids, stilbenes, alkaloids, and nutritionally complete seeds. Several of these compounds interact directly with the endocannabinoid system — the very regulatory system that maintains homeostasis throughout the human body. Others modulate the serotonin system, the GABA system, the transient receptor potential (TRP) channels, and the PPAR nuclear receptors. The pharmacological breadth is genuinely remarkable.</p>
+  <p>What we owe to patients — and to the science — is rigorous, undistorted investigation. Not the reflexive dismissal that characterized medical cannabis discourse for 50 years. And not the breathless overclaiming that characterizes too much of the wellness industry today. The honest position is clear: this plant contains a chemical architecture of extraordinary complexity and potential, and we are still in the early chapters of understanding it.</p>
+  <p>The next decade of cannabis research will be defined not by THC and CBD — we know enough about those — but by the minor cannabinoids, the terpene pharmacology, the flavonoid therapeutics, and the entourage mechanisms that remain incompletely characterized. That is where the science is most alive. That is where I do my work. And that is where the most important discoveries are waiting.</p>
+
+  <div class="cta-box">
+    <p>"Cannabis is not a single drug. It is a botanical library — and we have only read the first few pages."</p>
+    <div class="cta-sign">— Amrit Baral, PhD, MBBS, MPH · Johns Hopkins Bloomberg School of Public Health</div>
+  </div>
+</div>
+
+<!-- REFERENCES -->
+<section class="section" id="references">
+  <div class="section-label">References</div>
+  
+  <div>
+<div class="ref-vancouver" id="ref1"><span class="ref-num">1.</span><span>ElSohly MA, Radwan MM, Gul W, Chandra S, Galal A. Phytochemistry of Cannabis sativa L. <em>Prog Chem Org Nat Prod.</em> 2017;103:1-36. <span class="ref-doi"><a href="https://doi.org/10.1007/978-3-319-45541-9_1" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-319-45541-9_1</a></span></span></div>
+<div class="ref-vancouver" id="ref2"><span class="ref-num">2.</span><span>Whiting PF, Wolff RF, Deshpande S, Di Nisio M, Duffy S, Hernandez AV, et al. Cannabinoids for medical use: a systematic review and meta-analysis. <em>JAMA.</em> 2015;313(24):2456-73. <span class="ref-doi"><a href="https://doi.org/10.1001/jama.2015.6358" target="_blank" rel="noopener">https://doi.org/10.1001/jama.2015.6358</a></span></span></div>
+<div class="ref-vancouver" id="ref3"><span class="ref-num">3.</span><span>Tramèr MR, Carroll D, Campbell FA, Reynolds DJM, Moore RA, McQuay HJ. Cannabinoids for control of chemotherapy induced nausea and vomiting: quantitative systematic review. <em>BMJ.</em> 2001;323(7303):16-21. <span class="ref-doi"><a href="https://doi.org/10.1136/bmj.323.7303.16" target="_blank" rel="noopener">https://doi.org/10.1136/bmj.323.7303.16</a></span></span></div>
+<div class="ref-vancouver" id="ref4"><span class="ref-num">4.</span><span>Collin C, Ehler E, Waberzinek G, Alsindi Z, Davies P, Powell K, et al. A double-blind, randomized, placebo-controlled, parallel-group study of Sativex, in subjects with symptoms of spasticity due to multiple sclerosis. <em>Neurol Res.</em> 2010;32(5):451-9. <span class="ref-doi"><a href="https://doi.org/10.1179/016164109X12590518685660" target="_blank" rel="noopener">https://doi.org/10.1179/016164109X12590518685660</a></span></span></div>
+<div class="ref-vancouver" id="ref5"><span class="ref-num">5.</span><span>Devinsky O, Cross JH, Laux L, Marsh E, Miller I, Nabbout R, et al. Trial of cannabidiol for drug-resistant seizures in the Dravet syndrome. <em>N Engl J Med.</em> 2017;376(21):2011-20. <span class="ref-doi"><a href="https://doi.org/10.1056/NEJMoa1611618" target="_blank" rel="noopener">https://doi.org/10.1056/NEJMoa1611618</a></span></span></div>
+<div class="ref-vancouver" id="ref6"><span class="ref-num">6.</span><span>Blessing EM, Steenkamp MM, Manzanares J, Marmar CR. Cannabidiol as a potential treatment for anxiety disorders. <em>Neurotherapeutics.</em> 2015;12(4):825-36. <span class="ref-doi"><a href="https://doi.org/10.1007/s13311-015-0387-1" target="_blank" rel="noopener">https://doi.org/10.1007/s13311-015-0387-1</a></span></span></div>
+<div class="ref-vancouver" id="ref7"><span class="ref-num">7.</span><span>Bergamaschi MM, Queiroz RHC, Chagas MHN, de Oliveira DCG, De Martinis BS, Kapczinski F, et al. Cannabidiol reduces the anxiety induced by simulated public speaking in treatment-naïve social phobia patients. <em>Neuropsychopharmacology.</em> 2011;36(6):1219-26. <span class="ref-doi"><a href="https://doi.org/10.1038/npp.2011.6" target="_blank" rel="noopener">https://doi.org/10.1038/npp.2011.6</a></span></span></div>
+<div class="ref-vancouver" id="ref8"><span class="ref-num">8.</span><span>McGuire P, Robson P, Cubala WJ, Vasile D, Morrison PD, Barron R, et al. Cannabidiol (CBD) as an adjunctive therapy in schizophrenia: a multicenter randomized controlled trial. <em>Am J Psychiatry.</em> 2018;175(3):225-31. <span class="ref-doi"><a href="https://doi.org/10.1176/appi.ajp.2017.17030325" target="_blank" rel="noopener">https://doi.org/10.1176/appi.ajp.2017.17030325</a></span></span></div>
+<div class="ref-vancouver" id="ref9"><span class="ref-num">9.</span><span>Shinjyo N, Di Marzo V. The effect of cannabichromene on adult neural stem/progenitor cells. <em>Neurochem Int.</em> 2013;63(5):432-7. <span class="ref-doi"><a href="https://doi.org/10.1016/j.neuint.2013.08.002" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuint.2013.08.002</a></span></span></div>
+<div class="ref-vancouver" id="ref10"><span class="ref-num">10.</span><span>Jadoon KA, Ratcliffe SH, Barrett DA, Thomas EL, Stott C, Bell JD, et al. Efficacy and safety of cannabidiol and tetrahydrocannabivarin on glycemic and lipid parameters in patients with type 2 diabetes: a randomized, double-blind, placebo-controlled, parallel group pilot study. <em>Diabetes Care.</em> 2016;39(10):1777-86. <span class="ref-doi"><a href="https://doi.org/10.2337/dc16-0540" target="_blank" rel="noopener">https://doi.org/10.2337/dc16-0540</a></span></span></div>
+<div class="ref-vancouver" id="ref11"><span class="ref-num">11.</span><span>Hill TD, Cascio MG, Romano B, Duncan M, Pertwee RG, Williams CM, et al. Cannabidivarin-rich cannabis extracts are anticonvulsant in mouse and rat via a CB1 receptor-independent mechanism. <em>Br J Pharmacol.</em> 2013;170(3):679-92. <span class="ref-doi"><a href="https://doi.org/10.1111/bph.12321" target="_blank" rel="noopener">https://doi.org/10.1111/bph.12321</a></span></span></div>
+<div class="ref-vancouver" id="ref12"><span class="ref-num">12.</span><span>Rock EM, Kopstick RL, Limebeer CL, Parker LA. Tetrahydrocannabinolic acid reduces nausea-induced conditioned gaping in rats and vomiting in Suncus murinus. <em>Br J Pharmacol.</em> 2013;170(3):641-8. <span class="ref-doi"><a href="https://doi.org/10.1111/bph.12316" target="_blank" rel="noopener">https://doi.org/10.1111/bph.12316</a></span></span></div>
+<div class="ref-vancouver" id="ref13"><span class="ref-num">13.</span><span>Rock EM, Parker LA. Effect of low doses of cannabidiolic acid and ondansetron on LiCl-induced conditioned gaping (a model of nausea-induced behaviour) in rats. <em>Br J Pharmacol.</em> 2013;169(3):685-92. <span class="ref-doi"><a href="https://doi.org/10.1111/bph.12162" target="_blank" rel="noopener">https://doi.org/10.1111/bph.12162</a></span></span></div>
+<div class="ref-vancouver" id="ref14"><span class="ref-num">14.</span><span>Van Breemen RB, Muchiri RN, Bates TA, Weinstein JB, Leier HC, Farber JM, et al. Cannabinoids block cellular entry of SARS-CoV-2 and the emerging variants. <em>J Nat Prod.</em> 2022;85(1):176-84. <span class="ref-doi"><a href="https://doi.org/10.1021/acs.jnatprod.1c00946" target="_blank" rel="noopener">https://doi.org/10.1021/acs.jnatprod.1c00946</a></span></span></div>
+<div class="ref-vancouver" id="ref15"><span class="ref-num">15.</span><span>Scutt A, Williamson EM. Cannabinoids stimulate fibroblastic colony formation by bone marrow cells indirectly via CB2 receptors. <em>Calcif Tissue Int.</em> 2007;80(1):50-9. <span class="ref-doi"><a href="https://doi.org/10.1007/s00223-006-0171-7" target="_blank" rel="noopener">https://doi.org/10.1007/s00223-006-0171-7</a></span></span></div>
+<div class="ref-vancouver" id="ref16"><span class="ref-num">16.</span><span>Russo EB. Taming THC: potential cannabis synergy and phytocannabinoid-terpenoid entourage effects. <em>Br J Pharmacol.</em> 2011;163(7):1344-64. <span class="ref-doi"><a href="https://doi.org/10.1111/j.1476-5381.2011.01238.x" target="_blank" rel="noopener">https://doi.org/10.1111/j.1476-5381.2011.01238.x</a></span></span></div>
+<div class="ref-vancouver" id="ref17"><span class="ref-num">17.</span><span>LaVigne JE, Hecksel R, Dhopeshwarkar A, Christopoulos A, Bhatacharya A, Bhatacharya P. Cannabis sativa terpenes are cannabimimetic and selectively enhance cannabinoid activity. <em>eLife.</em> 2021;10:e60525. <span class="ref-doi"><a href="https://doi.org/10.7554/eLife.60525" target="_blank" rel="noopener">https://doi.org/10.7554/eLife.60525</a></span></span></div>
+<div class="ref-vancouver" id="ref18"><span class="ref-num">18.</span><span>Gertsch J, Leonti M, Raduner S, Racz I, Chen JZ, Xie XQ, et al. Beta-caryophyllene is a dietary cannabinoid. <em>Proc Natl Acad Sci USA.</em> 2008;105(26):9099-104. <span class="ref-doi"><a href="https://doi.org/10.1073/pnas.0803601105" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.0803601105</a></span></span></div>
+<div class="ref-vancouver" id="ref19"><span class="ref-num">19.</span><span>Vigushin DM, Poon GK, Boddy A, English J, Halbert GW, Pagonis C, et al. Phase I and pharmacokinetic study of D-limonene in patients with advanced cancer. <em>Cancer Chemother Pharmacol.</em> 1998;42(2):111-7. <span class="ref-doi"><a href="https://doi.org/10.1007/s002800050793" target="_blank" rel="noopener">https://doi.org/10.1007/s002800050793</a></span></span></div>
+<div class="ref-vancouver" id="ref20"><span class="ref-num">20.</span><span>Rufino AT, Ribeiro M, Judas F, Salgueiro L, Lopes MC, Cavaleiro C, et al. Anti-inflammatory and chondroprotective activity of (+)-α-pinene: structural and enantiomeric selectivity. <em>J Nat Prod.</em> 2014;77(2):264-9. <span class="ref-doi"><a href="https://doi.org/10.1021/np400828x" target="_blank" rel="noopener">https://doi.org/10.1021/np400828x</a></span></span></div>
+<div class="ref-vancouver" id="ref21"><span class="ref-num">21.</span><span>Legault J, Pichette A. Potentiating effect of β-caryophyllene on anticancer activity of α-humulene, isocaryophyllene and paclitaxel. <em>J Pharm Pharmacol.</em> 2007;59(12):1643-7. <span class="ref-doi"><a href="https://doi.org/10.1211/jpp.59.12.0005" target="_blank" rel="noopener">https://doi.org/10.1211/jpp.59.12.0005</a></span></span></div>
+<div class="ref-vancouver" id="ref22"><span class="ref-num">22.</span><span>Barrett ML, Gordon D, Evans FJ. Isolation from Cannabis sativa L. of cannflavin — a novel inhibitor of prostaglandin production. <em>Biochem Pharmacol.</em> 1985;34(11):2019-24. <span class="ref-doi"><a href="https://doi.org/10.1016/0006-2952(85)90325-8" target="_blank" rel="noopener">https://doi.org/10.1016/0006-2952(85)90325-8</a></span></span></div>
+<div class="ref-vancouver" id="ref23"><span class="ref-num">23.</span><span>Mukherjee A, Chakrabarti CK, Chakrabarti S, Bhatt DK. Cannflavin A and B — potent inhibitors of prostaglandin E2 in pancreatic cancer cells. <em>Cancer Lett.</em> 2020;490:195-209. <span class="ref-doi"><a href="https://pubmed.ncbi.nlm.nih.gov/32544550/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/32544550/</a></span></span></div>
+<div class="ref-vancouver" id="ref24"><span class="ref-num">24.</span><span>Mechoulam R, Ben-Shabat S. From gan-zi-gun-nu to anandamide and 2-arachidonoylglycerol: the ongoing story of cannabis. <em>Nat Prod Rep.</em> 1999;16(2):131-43. <span class="ref-doi"><a href="https://doi.org/10.1039/a800512g" target="_blank" rel="noopener">https://doi.org/10.1039/a800512g</a></span></span></div>
+<div class="ref-vancouver" id="ref25"><span class="ref-num">25.</span><span>Pamplona FA, da Silva LR, Coan AC. Potential clinical benefits of CBD-rich cannabis extracts over purified CBD in treatment-resistant epilepsy: observational data meta-analysis. <em>Front Neurol.</em> 2018;9:759. <span class="ref-doi"><a href="https://doi.org/10.3389/fneur.2018.00759" target="_blank" rel="noopener">https://doi.org/10.3389/fneur.2018.00759</a></span></span></div>
+<div class="ref-vancouver" id="ref26"><span class="ref-num">26.</span><span>Ferber SG, Namdar D, Hen-Shoval D, Eger G, Koltai H, Shoval G, et al. The "Entourage Effect": terpenes coupled with cannabinoids for the treatment of mood disorders and anxiety disorders. <em>Curr Neuropharmacol.</em> 2020;18(2):87-96. <span class="ref-doi"><a href="https://doi.org/10.2174/1570159X17666190903103923" target="_blank" rel="noopener">https://doi.org/10.2174/1570159X17666190903103923</a></span></span></div>
+<div class="ref-vancouver" id="ref27"><span class="ref-num">27.</span><span>Callaway J, Schwab U, Harvima I, Halonen P, Mykkanen O, Hyvonen P, et al. Efficacy of dietary hempseed oil in patients with atopic dermatitis. <em>J Dermatolog Treat.</em> 2005;16(2):87-94. <span class="ref-doi"><a href="https://doi.org/10.1080/09546630510035832" target="_blank" rel="noopener">https://doi.org/10.1080/09546630510035832</a></span></span></div>
+  </div>
+</section>
+
+<div class="disclaimer">
+  <div style="max-width:880px; margin:0 auto;">
+    <strong>Medical Disclaimer:</strong> This article is for educational purposes only and reflects the author's expert interpretation of current scientific literature. Nothing herein constitutes medical advice. Cannabis products are subject to varying legal statuses by jurisdiction. All therapeutic claims cited represent published research findings, not endorsements. Always consult a qualified healthcare provider. Research in this field is ongoing and evolving rapidly.
+  </div>
+</div>
+
+<footer>
+  <p>© Amrit Baral, PhD, MBBS, MPH · Johns Hopkins Bloomberg School of Public Health · Cannabis & Psychedelics Research</p>
+  <div class="footer-badge">PHYTOCHEMISTRY · EVIDENCE-BASED</div>
+</footer>
+
+</body>
+</html>

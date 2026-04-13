@@ -244,6 +244,8 @@ jekyll-minifier:
   exclude:
     - "blog/*/the-endocannabinoid-system/index.html"
     - "blog/*/the-endocannabinoid-system.html"
+    - "blog/*/the-cannabis-plant-chemical-components/index.html"
+    - "blog/*/the-cannabis-plant-chemical-components.html"
 
 # -----------------------------------------------------------------------------
 # Terser
