@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cycling/";
           },
-        },{id: "post-the-cannabis-plant-a-complete-guide-to-its-chemical-components",
+        },{id: "post-cannabis-marijuana-amp-hemp-what-s-the-real-difference",
+      
+        title: "Cannabis, Marijuana &amp; Hemp — What’s the Real Difference?",
+      
+      description: "One species. Three names. Vastly different legal statuses, cultural histories, and pharmacological profiles. A dual-audience explainer rooted in evidence.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/cannabis-marijuana-hemp/";
+        
+      },
+    },{id: "post-the-cannabis-plant-a-complete-guide-to-its-chemical-components",
       
         title: "The Cannabis Plant: A Complete Guide to Its Chemical Components",
       
