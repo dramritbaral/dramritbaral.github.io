@@ -46,16 +46,32 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
-    {%- comment -%} Primary URL for "open paper" (title link). Prefer DOI, then PubMed/html, then PDF, then website.{%- endcomment -%}
+    {%- comment -%} Primary URL for title: match "open paper" affordances (DOI, HTML, PDF, arXiv, url, website, code, PubMed). Local html/pdf use the same /assets/ paths as the link buttons below.{%- endcomment -%}
     {%- assign paper_url = nil -%}
     {%- if entry.doi and entry.doi != '' -%}
-      {%- assign paper_url = 'https://doi.org/' | append: entry.doi -%}
-    {%- elsif entry.html and entry.html contains '://' -%}
-      {%- assign paper_url = entry.html -%}
-    {%- elsif entry.pdf and entry.pdf contains '://' -%}
-      {%- assign paper_url = entry.pdf -%}
-    {%- elsif entry.url and entry.url contains '://' -%}
+      {%- assign paper_url = 'https://doi.org/' | append: entry.doi | strip -%}
+    {%- elsif entry.html and entry.html != '' -%}
+      {%- if entry.html contains '://' -%}
+        {%- assign paper_url = entry.html -%}
+      {%- else -%}
+        {%- assign paper_url = entry.html | prepend: '/assets/html/' | relative_url -%}
+      {%- endif -%}
+    {%- elsif entry.pdf and entry.pdf != '' -%}
+      {%- if entry.pdf contains '://' -%}
+        {%- assign paper_url = entry.pdf -%}
+      {%- else -%}
+        {%- assign paper_url = entry.pdf | prepend: '/assets/pdf/' | relative_url -%}
+      {%- endif -%}
+    {%- elsif entry.arxiv and entry.arxiv != '' -%}
+      {%- assign paper_url = 'https://arxiv.org/abs/' | append: entry.arxiv -%}
+    {%- elsif entry.eprint and entry.eprint != '' -%}
+      {%- assign paper_url = 'https://arxiv.org/abs/' | append: entry.eprint -%}
+    {%- elsif entry.url and entry.url != '' and entry.url contains '://' -%}
       {%- assign paper_url = entry.url -%}
+    {%- elsif entry.website and entry.website != '' and entry.website contains '://' -%}
+      {%- assign paper_url = entry.website -%}
+    {%- elsif entry.code and entry.code != '' and entry.code contains '://' -%}
+      {%- assign paper_url = entry.code -%}
     {%- elsif entry.pmid and entry.pmid != '' -%}
       {%- assign paper_url = 'https://pubmed.ncbi.nlm.nih.gov/' | append: entry.pmid | append: '/' -%}
     {%- endif -%}
