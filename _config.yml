@@ -328,6 +328,7 @@ filtered_bibtex_keywords:
     html,
     inspirehep_id,
     pdf,
+    pmid,
     poster,
     preview,
     selected,

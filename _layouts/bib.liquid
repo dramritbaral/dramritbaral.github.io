@@ -46,8 +46,27 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+    {%- comment -%} Primary URL for "open paper" (title link). Prefer DOI, then PubMed/html, then PDF, then website.{%- endcomment -%}
+    {%- assign paper_url = nil -%}
+    {%- if entry.doi and entry.doi != '' -%}
+      {%- assign paper_url = 'https://doi.org/' | append: entry.doi -%}
+    {%- elsif entry.html and entry.html contains '://' -%}
+      {%- assign paper_url = entry.html -%}
+    {%- elsif entry.pdf and entry.pdf contains '://' -%}
+      {%- assign paper_url = entry.pdf -%}
+    {%- elsif entry.url and entry.url contains '://' -%}
+      {%- assign paper_url = entry.url -%}
+    {%- elsif entry.pmid and entry.pmid != '' -%}
+      {%- assign paper_url = 'https://pubmed.ncbi.nlm.nih.gov/' | append: entry.pmid | append: '/' -%}
+    {%- endif -%}
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {%- if paper_url -%}
+        <a href="{{ paper_url | strip }}" class="publication-title-link" rel="noopener noreferrer" target="_blank">{{ entry.title }}</a>
+      {%- else -%}
+        {{ entry.title }}
+      {%- endif -%}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
