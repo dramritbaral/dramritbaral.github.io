@@ -12,7 +12,9 @@ nav_order: 9
 </div>
 
 <div class="clearfix">
-  <p>In the year 2015, to advocate against the stigma of HIV/AIDS and educate individuals and communities on this disease, I traveled across 16 countries in Asia and across the United States in my bicycle. I visited different communities, educational institutions, international media, and health agencies to raise awareness on HIV/AIDS.</p>
+  <p>In 2015, I set out on a global bicycle journey to advocate for public health, with a specific focus on reducing stigma around HIV/AIDS and improving awareness at the community level. Starting from Nepal, I cycled across 16 countries in Asia and later through the United States, engaging with diverse populations along the way. The journey took me through schools, universities, public spaces, media platforms, and health institutions, where I shared messages about HIV prevention, early testing, and the importance of compassion toward individuals living with HIV. Beyond awareness, the ride itself became a living demonstration of how individual action can contribute to broader social change. It also offered a unique opportunity to listen—learning from local perspectives on health, culture, and stigma in different parts of the world.</p>
+  <p>The experience also highlighted the deep interconnection between health, society, and the environment. Traveling by bicycle allowed for direct engagement with communities while symbolizing sustainable and health-promoting mobility. Despite physical challenges, logistical barriers, and long stretches of isolation on the road, the journey reinforced a central belief: stigma and misinformation can be addressed through persistent dialogue and human connection. More than a physical expedition, it became a platform for education, empathy, and global solidarity around one of the most enduring public health challenges. In many ways, the road itself became both classroom and bridge—connecting people who might otherwise never share the same conversation.</p>
+  <p>I am currently writing a book on this journey and will be sharing it soon.</p>
 </div>
 
 ## News and Media
