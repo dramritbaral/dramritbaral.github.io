@@ -7,8 +7,24 @@ nav: true
 nav_order: 9
 ---
 
-<div class="profile float-right" style="max-width: 400px; margin-left: 20px; margin-bottom: 20px;">
+<style>
+  .cycling-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cycling-photo-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+</style>
+
+<div class="cycling-photo-grid">
   {% include figure.liquid path="assets/img/web_1_cycling.jpg" class="img-fluid z-depth-1 rounded" loading="eager" alt="Cycling at Welcome to Utah sign" %}
+  {% include figure.liquid path="assets/img/cycling_nepal_flag.png" class="img-fluid z-depth-1 rounded" loading="eager" alt="Cycling with Nepal flag in Kathmandu" %}
 </div>
 
 <div class="clearfix">
