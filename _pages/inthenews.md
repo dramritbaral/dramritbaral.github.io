@@ -9,6 +9,10 @@ nav_order: 8
 
 ## Featured Articles
 
+- **Estimates of Cannabis and Classic Psychedelic Use Among Older U.S. Cancer Survivors**  
+  *OncoDaily* (April 25, 2026)  
+  [Read the article](https://oncodaily.com/voices/amrit-baral-490918)
+
 - **New Study Finds Potential Link Between Classic Psychedelic Use and Prostate Cancer Diagnosis in Older U.S. Men**  
   *OncoDaily* (December 17, 2025)  
   [Read the article](https://oncodaily.com/voices/psychedelic-429966)
