@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cycling/";
           },
-        },{id: "post-estimates-of-cannabis-and-classic-psychedelic-use-among-older-u-s-cancer-survivors",
+        },{id: "post-first-regulate-cannabis-cultivation-licence-it-after",
+      
+        title: 'First regulate cannabis cultivation. Licence it after <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Kathmandu Post opinion piece on why Nepal needs scientific, legal, and laboratory infrastructure before licensing cannabis cultivation",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://kathmandupost.com/columns/2026/04/27/first-regulate-cannabis-cultivation-licence-it-after", "_blank");
+        
+      },
+    },{id: "post-estimates-of-cannabis-and-classic-psychedelic-use-among-older-u-s-cancer-survivors",
       
         title: 'Estimates of Cannabis and Classic Psychedelic Use Among Older U.S. Cancer Survivors <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
